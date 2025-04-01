@@ -50,6 +50,7 @@ html, body {
 }
 /* End Coupon  */
 
+/* TODO : NAVBAr parando de descer quando chega no carousel??  */
 /* Navbar */
 .navbar {
     background: white;
@@ -375,6 +376,10 @@ html, body {
 /* End hero banner */
 
 /* Carousel */
+.container-carousel {
+    padding: 0 10px;
+}
+
 .carousel-inner {
     display: flex;
 }
@@ -389,18 +394,18 @@ html, body {
 }
 
 .card {
-    width: 238px;
-    height: 409px;
-    margin: 0 10px;
+    width: 174px;
+    height: 348px;
+    margin: 0;
+    margin-right: 8px;
 }
 
 .card-body {
-    padding: 0;
+    padding: 0 8px;
 }
 
 .new-item-card-tag {
     margin-top: 7px;
-    margin-left: 8px;
     padding: 1px 6px;
     font-size: 10px;
     border-radius: 4px;
@@ -410,11 +415,12 @@ html, body {
 }
 
 .card-body img {
-    width: 222px;
-    height: 222px;
+    width: 158px;
+    height: 158px;
 }
 
 .card-body h3 {
+    margin-top: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
@@ -469,14 +475,159 @@ html, body {
 }
 
 .card-body button {
-    width: 222px;
+    width: 158px;
     height: 40px;
     border-radius: 8px;
     padding: 10px 24px;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    margin: 0 auto;
+    margin: 0;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    opacity: 1 !important;
+
+    background-color: #fff;
+    width: 12px !important;
+    height: 11px !important;
+    padding: 15px;
+    border: 1px solid #005CFF;
+    border-radius: 100%;
+}
+
+.carousel-control-prev {
+    left: -10px;
+}
+
+.carousel-control-next {
+    right: -10px;
+}
+
+.carousel-indicators {
+    bottom: -48px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+}
+
+.carousel-indicators button {
+    background-color: #303030 !important;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+
+    .carousel-indicators {
+        display: flex !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        width: 238px;
+        height: 409px;
+    }
+
+    .card-body img {
+        width: 222px;
+        height: 222px;
+    }
+
+    .card-body button {
+        width: 222px;
+    }
+}
 /* End Carousel */
+
+ /* Image & Text content */
+ .image-and-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.image-and-text-container h3 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 4%;
+    margin-top: 12px;
+    padding-bottom: 18px;
+}
+
+.image-and-text-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-and-text-container .text-container {
+    text-align: justify;
+    max-width: 600px;
+    padding: 0 24px;
+}
+
+.image-and-text-container .mobile-text {
+    display: block;
+}
+  
+.image-and-text-container .desktop-text {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .image-and-text-container {
+        width: 1177px;
+        height: 747px;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .image-and-text-container figure {
+        flex: 1;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-and-text-container img {
+        width: 652px;
+        height: 647px;
+    }
+
+    .inner-text-container {
+        max-width: 487px;
+        height: 536px;
+        padding: 0 24px;
+    }
+
+    .image-and-text-container .mobile-text {
+        display: none;
+    }
+    
+    .image-and-text-container .desktop-text {
+        display: block;
+    }
+}
+ /* End Image & Text content */
