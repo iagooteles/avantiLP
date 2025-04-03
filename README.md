@@ -47,6 +47,8 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
    ```
 3. Abra o arquivo `index.html` em seu navegador.
 
+4. Opção de uso: Live Server;
+
 ---
 
 ### Features implementadas
@@ -54,3 +56,4 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - HEAD Coupon;
 - Navbar; * Ainda é preciso implementar as categorias *
 
+OBS: Usar mais Javascript para renderizar componentes;

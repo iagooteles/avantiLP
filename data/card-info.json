@@ -1,0 +1,183 @@
+[
+    {
+      "tag": "Novo",
+      "image": "./Assets/images/model.png",
+      "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+      "defaultPrice": "R$ 100",
+      "discountPrice": "R$ 79,90",
+      "discountPercent": "10% OFF",
+      "installments": "10x de R$ 7,90"
+    },
+    {
+      "tag": "20%OFF",
+      "image": "./Assets/images/model.png",
+      "title": "Ofertas especiais para você!",
+      "defaultPrice": "R$ 150",
+      "discountPrice": "R$ 120,00",
+      "discountPercent": "20% OFF",
+      "installments": "12x de R$ 10,00"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    },
+    {
+        "tag": "Novo",
+        "image": "./Assets/images/model.png",
+        "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+        "defaultPrice": "R$ 100",
+        "discountPrice": "R$ 79,90",
+        "discountPercent": "10% OFF",
+        "installments": "10x de R$ 7,90"
+    }
+]
+  
