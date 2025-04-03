@@ -8,6 +8,9 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 ---
 
+## Observações: 
+- No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em data/card-info.js. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html;
+
 ## ✅ Requisitos para o Desenvolvimento
 
 ### 1️⃣ Estruturar o HTML conforme o layout do Figma
@@ -54,6 +57,9 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 ### Features implementadas
 
 - HEAD Coupon;
+- carousel;
 - Navbar; * Ainda é preciso implementar as categorias *
+- Footer;
+- Supported By;
 
 OBS: Usar mais Javascript para renderizar componentes;

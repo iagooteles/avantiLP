@@ -51,54 +51,96 @@ html, body {
 /* End Coupon  */
 
 /* TODO : NAVBAr parando de descer quando chega no carousel??  */
-/* Navbar */
+/* Header */
 .navbar {
     background: white;
     padding: 10px 20px;
 }
 
-.nav-mobile {
-    padding-top: 70px;
-}
-
-.container-navbar {
-    padding-bottom: 0;
-    margin: 0;
-    max-width: 100% !important;
-    background-color: #fff;
-}
-
-.container-navbar .container-fluid {
+.header-container {
     width: 1259px;
+    margin: 0 auto;
 }
 
-.nav-item a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
+.header-search-box-desktop {
+    margin-left: 65px;
+}
+
+.input-container {
+    border: 1px solid #DDDDDD !important;
+    border-radius: 10px;
+    position: relative;
+    max-width: 361px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.input-container .input-icon {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.input-container input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 10px !important;
+}
+
+.input-container input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 10px !important;
+    
+}
+
+.search-btn {
+    background: none;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+}
+
+.search-btn img {
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.input-container .search-btn {
+    border: none;
+    padding: 8px;
 }
 
 .navbar-toggler {
     border: none;
-    padding: 0 !important;
 }
 
-.input-container input, .search-btn {
-    border: none;
+/* Espaçamento melhor para o campo de busca no desktop */
+@media (min-width: 992px) {
+    .input-container {
+        max-width: 594px;
+    }
+
+    #navbarNav.hide-desktop {
+        display: none !important;
+    }
 }
 
-.input-container input {
-    margin-left: 19px;
-}
 
-.input-container .search-btn {
-    margin-right: 11px;
-}
 
-.input-container {
-    border: 1px solid #DDDDDD;
-    border-radius: 10px;
-}
 /* End Navbar */
 
 /* Dropdown navbar */ /* FAZER depois! */ 
@@ -733,11 +775,24 @@ footer {
     padding-bottom: 10px;
 }
 
+.footer-inner-container {
+    --bs-gutter-x: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
 footer .social-icons-footer {
     margin-top: 40px;
     margin-bottom: 48px;
     gap: 40px;
+}
 
+.banking-icons-footer {
+    width: 290px;
+    margin: 40px auto 48px;
+    margin-top: 40px;
+    margin-bottom: 48px;
+    gap: 40px;
 }
 
 .footer-toggle {
@@ -756,6 +811,10 @@ footer .social-icons-footer {
   
 .footer-toggle .arrow {
     transition: transform 0.3s;
+}
+
+.footer-section {
+    padding:  16px;
 }
 
 .footer-section ul {
@@ -783,6 +842,35 @@ footer .social-icons-footer {
     width: 224px;
     height: 25px;
     margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        width: 100%;
+    }
+
+    .footer-container {
+        width: 1160px;
+        margin: 0 auto;
+    }
+
+    .footer-icons > img {
+        margin-right: 40px;
+    }
+    
+    .footer-icons-row-1 {
+        padding-right: 0;
+    }
+    
+    .footer-icons-row-2 {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .banking-icons-footer {
+        width: 546px;
+        gap: 0;
+    }
 }
 /* End Footer  */
 
