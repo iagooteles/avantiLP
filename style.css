@@ -1,3 +1,4 @@
+/* Estilizações gerais  */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,11 @@ html, body {
     height: 100%;
     font-family: "Nunito Sans", sans-serif;
 }
+
+.bg-gray {
+    background-color: #dedede;
+}
+/* End Estilizações gerais */
 
 /* Coupon  */
 .coupon {
@@ -686,21 +692,39 @@ html, body {
 }
 /* End Carousel */
 
- /* Image & Text content */
- .image-and-text-container {
+/* Image & Text content */
+.image-and-text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    padding-top: 20px;
+    padding: 28px 20px;
+    margin-bottom: 44px;
+}
+
+.image-text-outer-container {
+    width: 100%;
+}
+
+.inner-text-container p {
+    font-size: 14px;
+}
+
+.image-and-text-container.no-padding {
+    padding: 0;
 }
 
 .image-and-text-container h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 4%;
-    margin-top: 12px;
     padding-bottom: 18px;
+    margin-top: 8px;
+}
+
+.image-and-text-container figure {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .image-and-text-container img {
@@ -708,12 +732,7 @@ html, body {
     height: auto;
 }
 
-.inner-text-container {
-    padding: 0 24px;
-}
-
 .image-and-text-container .text-container {
-    text-align: justify;
     max-width: 600px;
     padding: 0 24px;
 }
@@ -726,6 +745,17 @@ html, body {
     display: none;
 }
 
+
+.inner-text-container.with-padding {
+    padding-left: 24px;
+}
+
+.map-pin-text-container p {
+    margin-left: 14px;
+    font-size: 12px;
+    color: #000;
+}
+
 @media (min-width: 768px) {
     .image-and-text-container {
         width: 1177px;
@@ -733,23 +763,43 @@ html, body {
         flex-direction: row;
         align-items: center;
         margin: 20px auto;
+        text-align: left;
+    }
+
+    .image-and-text-img.first-mug-avanti-image {
+        height: 747px;
+    }
+
+    .image-and-text-container h3 {
+        font-size: 30px;
+    }
+
+    .image-and-text-container.reverse {
+        flex-direction: row-reverse;
     }
 
     .image-and-text-container figure {
         flex: 1;
         max-width: 50%;
-        display: flex;
-        justify-content: center;
+        margin-bottom: 0;
     }
 
     .image-and-text-container img {
-        width: 652px;
+        max-width: 652px;
         height: 647px;
     }
 
     .inner-text-container {
-        max-width: 487px;
+        max-width: 510px;
         height: 536px;
+    }
+
+    .inner-text-container.with-padding {
+        padding-left: 67px;
+    }
+
+    .inner-text-container p {
+        font-size: 18px;
     }
 
     .image-and-text-container .mobile-text {
@@ -758,6 +808,22 @@ html, body {
     
     .image-and-text-container .desktop-text {
         display: block;
+    }
+
+    .map-pin-text-container {
+        width: 590px;
+        height: 125px;
+        margin-top: 40px;
+        align-items: center;
+    }
+    
+    .map-pin-text-container p {
+        width: 350px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        color: #4f4f4f;
     }
 }
  /* End Image & Text content */

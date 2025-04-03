@@ -11,6 +11,9 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 ## Observações: 
 - No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em data/card-info.js. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html;
 
+- No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos..... Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
+   OBS: Visto que os componentes são parecidos, mas levemente diferentes, foi-se reaproveitado parte da sua estrutura para a construção de ambos, a seguir foi implementado uma forma que se uma classe fosse presente na estrutura html seria renderizado o componente com Texto na direita e Imagem na esquerda, caso fosse a outra classe seria o contrário. Assim reaproveitamentos sua estutura e deixamos o nosso html mais limpo.
+
 ## ✅ Requisitos para o Desenvolvimento
 
 ### 1️⃣ Estruturar o HTML conforme o layout do Figma
@@ -33,9 +36,9 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 ## 📂 Tecnologias Utilizadas
 - **HTML5**
-- **CSS3** (ou framework CSS de escolha)
-- **JavaScript** (ou biblioteca para carrosséis)
-- **Figma** (como referência para o design)
+- **CSS3**
+- **JavaScript**
+- **Figma**
 
 ---
 
@@ -63,3 +66,5 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - Supported By;
 
 OBS: Usar mais Javascript para renderizar componentes;
+
+TODO: por title nas imgs (mesmo do alt)
