@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => { 
-    const containers = document.querySelectorAll("[class^='text-image-']"); // Seleciona todos os elementos que começam com "text-image-"
+    const containers = document.querySelectorAll("[class^='text-image-']");
 
     if (containers.length === 0) return;
 

@@ -23,7 +23,7 @@
     />
     <!-- End bootstrap -->
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
 
   <body>
@@ -412,7 +412,7 @@
     <!-- EndImage & Text 3  -->
     
     <!-- Carousel 2 -->
-    <div class="mt-5 pb-5 container-carousel">
+    <div class="mt-5 pb-5 container-carousel d-none d-lg-block">
       <div class="view-more-container d-flex justify-content-between">
         <span>Lançamentos</span>
         <button>Ver mais</button>
@@ -448,6 +448,41 @@
       </div>
     </div>
     <!-- End Carousel 2 -->
+
+    <!-- Contato Section  -->
+    <section class="contato-section">
+      <div class="img-contato-container">
+        <div class="img-blur-overlay"></div>
+        <img src="./Assets/images/avanti-place.png" alt="Banner Contato" title="Banner contato" class="img-contato">
+        <div class="linha-container">
+          <div class="contato-bar">
+            <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EndContato Section  -->
+
+    <!-- Newsletter -->
+    <section class="newsletter-container d-flex flex-column align-items-center">
+      <h3>Cadastre-se na nossa <span>newsletter</span></h3>
+      <div class="newsletter-form-container d-flex justify-content-center align-items-center">
+        <div class="newsletter-form-inner-container d-flex flex-column">
+          <form class="newsletter-form d-flex">
+            <input class="newsletter-name-input" type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            
+            <label class="checkbox-container">
+              <input type="checkbox" required>
+              <span>Estou de acordo com a <a href="#">Política de Privacidade</a></span>
+            </label>
+            
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Newsletter -->
 
     <!-- Footer  -->
     <footer class="mt-4">
