@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   megaMenu.addEventListener("mouseenter", showMenu);
   megaMenu.addEventListener("mouseleave", hideMenu);
 
-  fetch("./../data/categorias.json")
+  fetch("./../data/categories.json")
     .then(response => response.json())
     .then(data => {
 

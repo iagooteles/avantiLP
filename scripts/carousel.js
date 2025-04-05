@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const carousels = document.querySelectorAll(".carousel");
 
   try {
-    const response = await fetch("./../data/card-info.json");
+    const response = await fetch("./../data/card-info-carousel.json");
     const cards = await response.json();
 
     function renderCarousel(carousel) {
@@ -88,3 +88,5 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.error("Erro ao carregar os cards:", error);
   }
 });
+// Deixar carousel mais limpo 
+// usar functions e docstring;

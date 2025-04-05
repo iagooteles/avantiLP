@@ -1,7 +1,7 @@
 [
     {
       "tag": "Novo",
-      "image": "./Assets/images/model.png",
+      "image": "./Assets/images/carousel/model.png",
       "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
       "defaultPrice": "R$ 100",
       "discountPrice": "R$ 79,90",
@@ -10,7 +10,7 @@
     },
     {
       "tag": "20%OFF",
-      "image": "./Assets/images/model.png",
+      "image": "./Assets/images/carousel/model.png",
       "title": "Ofertas especiais para você!",
       "defaultPrice": "R$ 150",
       "discountPrice": "R$ 120,00",
@@ -19,7 +19,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -28,7 +28,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -37,7 +37,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -46,7 +46,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -55,7 +55,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -64,7 +64,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -73,7 +73,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -82,7 +82,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -91,7 +91,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -100,7 +100,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -109,7 +109,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -118,7 +118,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -127,7 +127,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -136,7 +136,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -145,7 +145,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -154,7 +154,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -163,7 +163,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",
@@ -172,7 +172,7 @@
     },
     {
         "tag": "Novo",
-        "image": "./Assets/images/model.png",
+        "image": "./Assets/images/carousel/model.png",
         "title": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
         "defaultPrice": "R$ 100",
         "discountPrice": "R$ 79,90",

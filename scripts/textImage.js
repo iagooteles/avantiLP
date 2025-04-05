@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 container.innerHTML = `
                     <section class="image-and-text-container no-padding mb-5">
                         <figure>
-                            <img src="./Assets/images/avanti-mug-2.png" alt="Caneca Avanti" title="Caneca Avanti" class="image-and-text-img first-mug-avanti-image">
+                            <img src="./Assets/images/avanti/avanti-mug-2.png" alt="Caneca Avanti" title="Caneca Avanti" class="image-and-text-img first-mug-avanti-image">
                         </figure>
                         <div class="inner-text-container with-padding">
                             <h3 class="text-start">LOREM IPSUM</h3>
@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <section class="image-text-outer-container bg-gray">
                         <div class="image-and-text-container reverse">
                             <figure>
-                                <img src="./Assets/images/avanti-mug.png" alt="Caneca Avanti" title="Caneca Avanti">
+                                <img src="./Assets/images/avanti/avanti-mug.png" alt="Caneca Avanti" title="Caneca Avanti">
                             </figure>
                             <div class="inner-text-container">
                                 <h3 class="text-center">LOREM IPSUM</h3>
                                 <div class="content">
                                     <div class="map-pin-text-container d-flex">
-                                        <img src="./Assets/images/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
+                                        <img src="./Assets/images/utils/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
                                         <p class="mobile-text">
                                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                                         </p>
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                                     </div>
 
                                     <div class="map-pin-text-container d-flex">
-                                        <img src="./Assets/images/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
+                                        <img src="./Assets/images/utils/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
                                         <p class="mobile-text">
                                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                                         </p>
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                                     </div>
 
                                     <div class="map-pin-text-container d-flex">
-                                        <img src="./Assets/images/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
+                                        <img src="./Assets/images/utils/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
                                         <p class="mobile-text">
                                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                                         </p>
