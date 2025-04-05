@@ -1,0 +1,113 @@
+{
+    "categorias": [
+      {
+        "id": 1,
+        "nome": "Departamento1",
+        "subcategorias": [
+          ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"],
+          ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"],
+          ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"]
+        ]
+      },
+      {
+        "id": 2,
+        "nome": "Departamento2",
+        "subcategorias": [
+          ["Categoria2", "Categoria2", "Categoria2"],
+          ["Categoria2", "Categoria2", "Categoria2", "Categoria2", "Categoria2", "Categoria2", "Categoria2"],
+          ["Categoria2", "Categoria2"]
+        ]
+      },
+      {
+        "id": 3,
+        "nome": "Departamento3",
+        "subcategorias": [
+          ["Categoria3", "Categoria3"],
+          ["Categoria3", "Categoria3", "Categoria3"],
+          ["Categoria3", "Categoria3", "Categoria3", "Categoria3", "Categoria3", "Categoria3", "Categoria3", "Categoria3", "Categoria3", "Categoria3"]
+        ]
+      },
+      {
+        "id": 4,
+        "nome": "Departamento4",
+        "subcategorias": [
+          ["Categoria4", "Categoria4"],
+          ["Categoria4", "Categoria4", "Categoria4"],
+          ["Categoria4", "Categoria4", "Categoria4", "Categoria4", "Categoria4", "Categoria4", "Categoria4", "Categoria4", "Categoria4", "Categoria4"]
+        ]
+      },
+      {
+        "id": 5,
+        "nome": "Departamento5",
+        "subcategorias": [
+          ["Categoria5", "Categoria5"],
+          ["Categoria5", "Categoria5", "Categoria5"],
+          ["Categoria5", "Categoria5", "Categoria5", "Categoria5", "Categoria5", "Categoria5", "Categoria5", "Categoria5", "Categoria5", "Categoria5"]
+        ]
+      },
+      {
+        "id": 6,
+        "nome": "Departamento6",
+        "subcategorias": [
+          ["Categoria6", "Categoria6"],
+          ["Categoria6", "Categoria6", "Categoria6"],
+          ["Categoria6", "Categoria6", "Categoria6", "Categoria6", "Categoria6", "Categoria6", "Categoria6", "Categoria6", "Categoria6", "Categoria6"]
+        ]
+      },
+      {
+        "id": 7,
+        "nome": "Departamento7",
+        "subcategorias": [
+          ["Categoria7", "Categoria7"],
+          ["Categoria7", "Categoria7", "Categoria7"],
+          ["Categoria7", "Categoria7", "Categoria7", "Categoria7", "Categoria7", "Categoria7", "Categoria7", "Categoria7", "Categoria7", "Categoria7"]
+        ]
+      },
+      {
+        "id": 8,
+        "nome": "Departamento8",
+        "subcategorias": [
+          ["Categoria8", "Categoria8"],
+          ["Categoria8", "Categoria8", "Categoria8"],
+          ["Categoria8", "Categoria8", "Categoria8", "Categoria8", "Categoria8", "Categoria8", "Categoria8", "Categoria8", "Categoria8", "Categoria8"]
+        ]
+      },
+      {
+        "id": 9,
+        "nome": "Departamento9",
+        "subcategorias": [
+          ["Categoria9", "Categoria9"],
+          ["Categoria9", "Categoria9", "Categoria9"],
+          ["Categoria9", "Categoria9", "Categoria9"]
+        ]
+      },
+      {
+        "id": 10,
+        "nome": "Departamento10",
+        "subcategorias": [
+          ["Categoria10", "Categoria10"],
+          ["Categoria10", "Categoria10", "Categoria10"],
+          ["Categoria10"]
+        ]
+      },
+      {
+        "id": 11,
+        "nome": "Departamento11",
+        "subcategorias": [
+          ["Categoria11", "Categoria11"],
+          ["Categoria11", "Categoria11", "Categoria11"],
+          ["Categoria11", "Categoria11", "Categoria11"]
+        ]
+      },
+      {
+        "id": 12,
+        "nome": "Departamento12",
+        "subcategorias": [
+          ["Categoria12", "Categoria12"],
+          ["Categoria12", "Categoria12", "Categoria12"],
+          ["Categoria12", "Categoria12", "Categoria12", "Categoria12"]
+        ]
+      }
+    ]
+  }
+  

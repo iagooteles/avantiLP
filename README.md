@@ -8,7 +8,9 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 ---
 
-## Observações: 
+## Observações:
+- Esse projeto foi feito respeitando o modelo mobile-first;
+
 - No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em data/card-info.js. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html;
 
 - No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos..... Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
@@ -66,5 +68,3 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - Supported By;
 
 OBS: Usar mais Javascript para renderizar componentes;
-
-TODO: por title nas imgs (mesmo do alt)
