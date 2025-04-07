@@ -24,7 +24,7 @@
     <!-- End bootstrap -->
 
     <link rel="icon" href="./Assets/favicon/favicon-avanti.png" type="image/png">
-    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
   </head>
 
   <body>
@@ -109,10 +109,10 @@
       <nav class="navbar navbar-expand-lg d-none d-lg-block">
         <div class="container-navbar">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" id="departamentos">
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle all-categories"
                   href="#"
                   id="navbarDropdownMenuLink"
                   aria-haspopup="true"
@@ -122,6 +122,7 @@
                   <span class="all-categories-title">Todas as categorias</span>
                 </a>
 
+                <!-- Dropdown menu  -->
                 <div
                   class="dropdown-menu mega-menu"
                   aria-labelledby="navbarDropdownMenuLink"
@@ -140,6 +141,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- End Dropdown menu  -->
               </li>
             </ul>
           </div>
@@ -158,16 +160,61 @@
     <li class="nav-item"><a class="nav-link" href="#">Departamento</a></li>
     <li class="nav-item"><a class="nav-link" href="#">Departamento</a></li> -->
 
-    <!-- Hero Banner -->
     <!-- TODO: hero banner vira um carousel em mobile?!  -->
-    <section class="hero-banner">
-        <div>
-          <h2>SUPER<span class="super-sale-hero-banner">SALE</span></h2>
-          <p class="selected-itens-hero-carousel">Selected items up to</p>
-          <span class="hero-banner-discount-amount">50% OFF</span>
-        </div>
+    <!-- Hero Banner -->
+    <!-- Hero Banner Desktop -->
+    <section class="hero-banner d-none d-md-flex">
+      <div>
+        <h2>SUPER<span class="super-sale-hero-banner">SALE</span></h2>
+        <p class="selected-itens-hero-carousel">Selected items up to</p>
+        <span class="hero-banner-discount-amount">50% OFF</span>
+      </div>
     </section>
-    <!-- End hero banner  -->
+
+    <!-- Hero Banner Carousel Mobile -->
+    <div id="heroBannerCarousel" class="hero-carousel d-md-none carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- TODO : Colocar para renderizar de arquivo externo -->
+        <div class="carousel-item active">
+          <section class="hero-banner">
+            <div>
+              <h2>SUPER<span class="super-sale-hero-banner">SALE</span></h2>
+              <p class="selected-itens-hero-carousel">Selected items up to</p>
+              <span class="hero-banner-discount-amount">50% OFF</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="carousel-item">
+          <section class="hero-banner">
+            <div>
+              <h2>SUPER<span class="super-sale-hero-banner">SALE</span></h2>
+              <p class="selected-itens-hero-carousel">Selected items up to</p>
+              <span class="hero-banner-discount-amount">50% OFF</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="carousel-item">
+          <section class="hero-banner">
+            <div>
+              <h2>SUPER<span class="super-sale-hero-banner">SALE</span></h2>
+              <p class="selected-itens-hero-carousel">Selected items up to</p>
+              <span class="hero-banner-discount-amount">50% OFF</span>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <div class="carousel-indicators carousel-indicators-hero-banner">
+        <button type="button" data-bs-target="#heroBannerCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroBannerCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroBannerCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+    <!-- End Hero Banner -->
 
     <!-- Carousel -->
     <div class="mt-5 pb-5 container-carousel">
@@ -177,7 +224,7 @@
       </div>
 
       <!-- data-bs-ride="false" => para desativar novamente o carousel -->
-      <div id="cardCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="cardCarousel1" class="carousel slide card-carousel" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"></button>
           <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1"></button>
@@ -225,7 +272,7 @@
       </div>
 
       <!-- data-bs-ride="false" => para desativar novamente o carousel -->
-      <div id="cardCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="cardCarousel2" class="carousel slide card-carousel" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"></button>
           <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1"></button>
@@ -419,12 +466,9 @@
 
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/search.js"></script>
-    <script src="index.js"></script>
     <script src="./scripts/textImage.js"></script>
     <script src="./scripts/menu-nav.js"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="./scripts/footer-toggle.js"></script>
 
   </body>
 </html>

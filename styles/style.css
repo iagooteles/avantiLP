@@ -282,18 +282,17 @@ html, body {
     width: 22px;
   }
   
-  .mega-menu-categories::-webkit-scrollbar-track {
+.mega-menu-categories::-webkit-scrollbar-track {
     background: transparent;
-  }
+}
   
-  .mega-menu-categories::-webkit-scrollbar-thumb {
+.mega-menu-categories::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 33px;
   
     border: 10px solid transparent;
     background-clip: content-box;
-  }
-
+}
   
 .link-container {
     display: flex;
@@ -325,7 +324,7 @@ html, body {
 
 .mega-menu .dropdown-item:hover {
     color: #005CFF !important;
-    background-color: #f5f5f5;
+    background-color: #fff !important;
     font-weight: bold;
 }
 
@@ -413,115 +412,131 @@ html, body {
 }
 
 /* End Dropdown navbar */
-
+/* TODO: COlocar sombreamento acima */
 /* Hero banner */
-.hero-banner {   /* TODO: COlocar sombreamento acima */
-    background-image: url('./Assets/images/hero-banner/chair-hero-banner.jpg');
+#heroBannerCarousel .carousel-item {
+    flex: 0 0 100%;
+}
+
+.hero-banner {
+    background-image: url('../Assets/images/hero-banner/chair-hero-banner.jpg');
     background-color: #E7E7EA;
-    background-size: auto;
-    background-position: 20% -350px;
+    background-size: cover;
+    background-position: -180px 70%;
     background-repeat: no-repeat;
-    height: 510px;
+    height: 306px;
     display: flex;
     justify-content: end;
     align-items: center;
     text-align: center;
-
     width: 100%;
 }
 
-.hero-banner div {
-    width: 576px;
-    margin-right: 199px;
+.hero-carousel {
+    position: relative;
 }
 
+.carousel-indicators-hero-banner {
+    position: absolute;
+    bottom: -15px;
+    z-index: 10;
+}
+  
+.hero-banner div {
+    width: 100%;
+    margin-left: 150px;
+}
+  
 .hero-banner h2 {
-    font-size: 100px;
+    font-size: 40px;
     line-height: 100%;
     text-transform: capitalize;
     letter-spacing: 0;
     font-weight: 700;
     color: #000;
 }
-
+  
 .super-sale-hero-banner {
     font-weight: 300;
+    display: block;
 }
-
+  
 .hero-banner p {
     font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 4.8px;
+    font-size: 12px;
+    letter-spacing: 0px;
     text-transform: uppercase;
     color: #005CFF;
     line-height: 40px;
     margin: 0;
 }
-
+  
 .selected-itens-hero-carousel {
     margin-bottom: 1rem !important;
 }
-
+  
 .hero-banner-discount-amount {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 32px;
     line-height: 40px;
     letter-spacing: 0%;
     text-transform: uppercase;
     color: #005CFF;
 }
-
-@media (max-width: 992px) { /* TODO: ainda não fiz tablet, atualizar depois */
+  
+@media (min-width: 577px) {
     .hero-banner {
-        background-size: cover;
+      height: 510px;
+      background-position: 20% -350px;
+      background-size: cover;
     }
-
+  
     .hero-banner div {
-        margin-right: 0;
+      margin-left: auto;
+      margin-right: 0;
+      width: 576px;
     }
-
+  
     .hero-banner h2 {
-        font-size: 60px;
+      font-size: 60px;
     }
-
+  
     .hero-banner p {
-        font-size: 20px;
-        letter-spacing: 0px;
+      font-size: 20px;
     }
-
+  
     .hero-banner-discount-amount {
-        font-size: 45px;
+      font-size: 45px;
     }
 }
-
-@media (max-width: 576px) {
+  
+@media (min-width: 768px) {
     .hero-banner {
-        height: 306px;
-        background-position: -180px 70%;
+      background-size: auto;
     }
-
+  
     .hero-banner div {
-        margin-left: 150px;
-        /* margin-top: 40px; */
+      margin-right: 199px;
     }
-
+  
     .hero-banner h2 {
-        font-size: 40px;
+      font-size: 100px;
     }
-
+  
     .hero-banner p {
-        font-size: 12px;
+      font-size: 25px;
+      letter-spacing: 4.8px;
     }
-
+  
     .hero-banner-discount-amount {
-        font-size: 32px;
+      font-size: 60px;
     }
+}  
 
-    .super-sale-hero-banner {
-        display: block;
-    }
-}
-/* End hero banner */
+
+
+
+
 
 /* Carousel */
 .container-carousel {
@@ -693,7 +708,7 @@ html, body {
     right: -15px;
 }
 
-.carousel-indicators {
+.card-carousel .carousel-indicators {
     bottom: -48px;
     /* margin: 0 !important; */
 }

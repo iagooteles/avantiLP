@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  const carousels = document.querySelectorAll(".carousel");
+  const carousels = document.querySelectorAll(".card-carousel");
 
   try {
     const response = await fetch("./../data/card-info-carousel.json");

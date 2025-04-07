@@ -13,8 +13,13 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 - No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em data/card-info-carousel.js. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html;
 
-- No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos..... Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
+- No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos, ele busca pela classe 'text-image-' no nosso index.html e faz a lógica para a renderização do componente de acordo com o seu número(lógica da função 'getCardIndexFromContainer'). Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
    OBS: Visto que os componentes são parecidos, mas levemente diferentes, foi-se reaproveitado parte da sua estrutura para a construção de ambos, a seguir foi implementado uma forma que se uma classe fosse presente na estrutura html seria renderizado o componente com Texto na direita e Imagem na esquerda, caso fosse a outra classe seria o contrário. Assim reaproveitamentos sua estutura e deixamos o nosso html mais limpo.
+
+- ./scripts/menu-nav.js é responsável pela renderização dos itens da navbar, tirando o componente imagem. Ele busca as informações de ./data/categories.json; Dessa forma é possível facilmente alterar o nosso .json e ver as mudanças em tela;
+   OBS: Como a imagem ao final do nav é fixa, são apenas 8 linhas de código no .html, e vai ficar sempre lá, não houve necessidade de colocar sua lógica de renderização em um arquivo externo; Caso fosse outro componente mais extenso, que tivesse mais linhas de código ou 'poluísse' o .html de alguma forma, seria delegado sua lógica de renderização em um arquivo externo.
+
+- ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`
 
 ## ✅ Requisitos para o Desenvolvimento
 
@@ -36,13 +41,37 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 ---
 
-## 📂 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - **HTML5**
 - **CSS3**
 - **JavaScript**
 - **Figma**
 
 ---
+
+## 📂 Estrutura do projeto
+AvantiLandingPage/
+├── Assets/                         # Arquivos estáticos (imagens e ícones)
+│   ├── favicon/                    # Ícones do site (favicon)
+│   └── images/                     # Imagens usadas na página
+│
+├── data/                           # Arquivos de dados em JSON
+│   ├── card-info-carousel.json     # Dados para os cards do carrossel
+│   ├── categories.json             # Categorias exibidas na página inicial
+│   └── text-image-info.json        # Informações para os componentes de texto com imagem
+│
+├── scripts/                        # Scripts JavaScript da página
+│   ├── carousel.js                 # Lógica do carrossel de produtos
+│   ├── footer-toggle.js            # Lógica de girar a seta do Accordion
+│   ├── menu-nav.js                 # Comportamento do menu de navegação
+│   ├── search.js                   # Funcionalidade de busca
+│   └── textImage.js                # Renderização dos componentes de texto com imagem
+│
+├── styles/                         
+│   └── style.css                   # Arquivo principal de estilos
+│
+├── index.html                      # Página principal da landing page
+└── README.md                       # Documentação do projeto
 
 ## 📌 Como Executar o Projeto
 1. Clone este repositório:
@@ -66,3 +95,8 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - Navbar; * Ainda é preciso implementar as categorias *
 - Footer;
 - Supported By;
+
+Continuar da aula 42;
+
+REACT => Continuar da aula 02;
+TODO: Colocar mais tratamentos de erros com fetch.then.catch ;
