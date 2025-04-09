@@ -50,20 +50,25 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 ---
 
 ## 📂 Estrutura do projeto
+
+```bash
 AvantiLandingPage/
 ├── Assets/                         # Arquivos estáticos (imagens e ícones)
-│   ├── favicon/                    # Ícones do site (favicon)
+│   ├── favicon/                    # Favicon do site
+│   ├── icons/                      # Ícones do site
 │   └── images/                     # Imagens usadas na página
 │
 ├── data/                           # Arquivos de dados em JSON
-│   ├── card-info-carousel.json     # Dados para os cards do carrossel
+│   ├── cardInfoCarousel.json       # Dados para os cards do carrossel
 │   ├── categories.json             # Categorias exibidas na página inicial
-│   └── text-image-info.json        # Informações para os componentes de texto com imagem
+│   ├── heroBannerData.json         # Categorias exibidas na página inicial
+│   └── textImageData.json          # Informações para os componentes de texto com imagem
 │
 ├── scripts/                        # Scripts JavaScript da página
 │   ├── carousel.js                 # Lógica do carrossel de produtos
-│   ├── footer-toggle.js            # Lógica de girar a seta do Accordion
-│   ├── menu-nav.js                 # Comportamento do menu de navegação
+│   ├── footerToggle.js             # Lógica de girar a seta do Accordion
+│   ├── heroBannerLoader.js         # Renderização do componente Hero Banner
+│   ├── menuNav.js                  # Comportamento do menu de navegação
 │   ├── search.js                   # Funcionalidade de busca
 │   └── textImage.js                # Renderização dos componentes de texto com imagem
 │
@@ -72,6 +77,7 @@ AvantiLandingPage/
 │
 ├── index.html                      # Página principal da landing page
 └── README.md                       # Documentação do projeto
+```
 
 ## 📌 Como Executar o Projeto
 1. Clone este repositório:
@@ -90,13 +96,12 @@ AvantiLandingPage/
 
 ### Features implementadas
 
-- HEAD Coupon;
+- HEAD Coupon; (100%)
 - carousel;
 - Navbar; * Ainda é preciso implementar as categorias *
 - Footer;
 - Supported By;
 
-Continuar da aula 42;
-
-REACT => Continuar da aula 02;
 TODO: Colocar mais tratamentos de erros com fetch.then.catch ;
+
+TODO: Fix desktop view / imageText e checar o resto.

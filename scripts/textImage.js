@@ -1,33 +1,15 @@
-document.addEventListener("DOMContentLoaded", async () => {
-    const containers = document.querySelectorAll("[class^='text-image-']");
-    if (containers.length === 0) return;
-  
-    const data = await fetchTextImageData("./../data/text-image-info.json");
-    if (!data) return;
-  
-    containers.forEach(container => {
-      const index = getCardIndexFromContainer(container);
-      if (!index) return;
-  
-      const html = getCardHTMLByIndex(index);
-      if (html) container.innerHTML = html;
-    });
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const containers = document.querySelectorAll("[class^='text-image-']");
+  if (containers.length === 0) return;
 
-/**
- * Faz o fetch do arquivo JSON contendo os dados.
- * @param {string} path - Caminho para o arquivo JSON.
- * @returns {Promise<Object|null>} - Retorna os dados em formato objeto ou null em caso de erro.
- */
-async function fetchTextImageData(path) {
-    try {
-      const response = await fetch(path);
-      return await response.json();
-    } catch (error) {
-      console.error("Erro ao carregar os dados do JSON", error);
-      return null;
-    }
-  }
+  containers.forEach(container => {
+    const index = getCardIndexFromContainer(container);
+    if (!index) return;
+
+    const html = getCardHTMLByIndex(index);
+    if (html) container.innerHTML = html;
+  });
+});
   
 /**
  * Retorna o índice do card com base na classe CSS do container.
@@ -35,9 +17,9 @@ async function fetchTextImageData(path) {
  * @returns {string|null} - Índice como string (ex: "1", "2") ou null.
  */
 function getCardIndexFromContainer(container) {
-const classList = Array.from(container.classList);
-const selectedClass = classList.find(cls => cls.startsWith("text-image-"));
-return selectedClass?.split("-")[2] || null;
+  const classList = Array.from(container.classList);
+  const selectedClass = classList.find(cls => cls.startsWith("text-image-"));
+  return selectedClass?.split("-")[2] || null;
 }
   
 /**
@@ -46,14 +28,14 @@ return selectedClass?.split("-")[2] || null;
  * @returns {string|null} - HTML como string ou null se índice não for reconhecido.
  */
 function getCardHTMLByIndex(index) {
-switch (index) {
+  switch (index) {
     case "1":
-    return getCardOneHTML();
+      return getCardOneHTML();
     case "2":
-    return getCardTwoHTML();
+      return getCardTwoHTML();
     default:
-    return null;
-}
+      return null;
+  }
 }
   
 /**
@@ -62,7 +44,7 @@ switch (index) {
  */
 function getCardOneHTML() {
     return `
-      <section class="image-and-text-container no-padding mb-5">
+      <section class="image-and-text-container no-padding">
         <figure>
           <img src="./Assets/images/avanti/avanti-mug-2.png" alt="Caneca Avanti" title="Caneca Avanti" class="image-and-text-img first-mug-avanti-image">
         </figure>
@@ -99,12 +81,10 @@ function getCardTwoHTML() {
       <div class="map-pin-text-container d-flex">
         <img src="./Assets/images/utils/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
         <p class="mobile-text">
-          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
         </p>
         <p class="desktop-text">
-          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
         </p>
       </div>
     `;
@@ -115,9 +95,9 @@ function getCardTwoHTML() {
           <figure>
             <img src="./Assets/images/avanti/avanti-mug.png" alt="Caneca Avanti" title="Caneca Avanti">
           </figure>
-          <div class="inner-text-container">
+          <div class="inner-text-container inner-text-container-second-card">
             <h3 class="text-center">LOREM IPSUM</h3>
-            <div class="content">
+            <div class="content second-card-content">
               ${Array.from({ length: 3 }, () => getMapPinTextBlock()).join("")}
             </div>
           </div>

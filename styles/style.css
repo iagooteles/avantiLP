@@ -19,12 +19,12 @@ html, body {
     background: #005CFF;
     color: white;
     text-align: center;
-    font-weight: 700;
-    font-size: 14px;
     width: 100%;
-  }
+    padding: 4px 4px;
+}
 
 .coupon p {
+    font-size: 14px;
     font-weight: 700;
     margin: auto;
 }
@@ -40,14 +40,7 @@ html, body {
     font-weight: 500;
 }
 
-@media (max-width: 768px) { /* Mobile */
-    .coupon {
-        height: 52px;
-        padding: 4px 22px;
-    }
-}
-
-@media (min-width: 769px) { /* Desktop */
+@media (min-width: 769px) {
     .coupon {
         height: 30px;
     }
@@ -115,6 +108,12 @@ html, body {
     background: transparent;
     border-radius: 10px;
 }
+
+.input-container input::placeholder {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
   
 .input-container .search-btn {
     border: none;
@@ -128,6 +127,10 @@ html, body {
 
 .cart-mobile {
     margin-right: 8px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
   
 @media (min-width: 992px) {
@@ -203,6 +206,14 @@ html, body {
 .container-navbar {
     width: 1259px;
     margin: 0 auto;
+}
+
+#departamentos li:nth-child(1) {
+    margin-left: 10px;
+}
+
+#departamentos li:nth-child(n+2) {
+    margin-left: 33px;
 }
 
 .navbar {
@@ -337,10 +348,6 @@ html, body {
     color: blue;
     font-weight: 700;
 }
-  
-.nav-item.dropdown:hover .mega-menu {
-    display: block;
-}
 
 .dropdown-img-container {
     position: relative;
@@ -433,6 +440,7 @@ html, body {
 }
 
 .hero-carousel {
+    margin-top: 0;
     position: relative;
 }
 
@@ -441,13 +449,14 @@ html, body {
     bottom: -15px;
     z-index: 10;
 }
-  
-.hero-banner div {
+
+.hero-banner-content {
     width: 100%;
     margin-left: 150px;
 }
-  
+
 .hero-banner h2 {
+    margin-bottom: 0;
     font-size: 40px;
     line-height: 100%;
     text-transform: capitalize;
@@ -469,10 +478,6 @@ html, body {
     color: #005CFF;
     line-height: 40px;
     margin: 0;
-}
-  
-.selected-itens-hero-carousel {
-    margin-bottom: 1rem !important;
 }
   
 .hero-banner-discount-amount {
@@ -550,7 +555,7 @@ html, body {
 }
 
 .view-more-container span {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -632,7 +637,6 @@ html, body {
 .off-discount-amount {
     background-color: #5EC0BE;
     margin-top: -16px;
-    height: 20px;
     border-radius: 4px;
     text-transform: uppercase;
     color: #fff;
@@ -640,7 +644,7 @@ html, body {
     font-size: 11px;
     margin-left: 10px;
     font-weight: 700;
-    padding: 4px 8px;
+    padding: 3px 8px;
 }
 
 .card-prices p {
@@ -788,6 +792,7 @@ html, body {
     
     .off-discount-amount {
         text-decoration: underline;
+        margin-top: 0;
     }
 }
 
@@ -808,12 +813,16 @@ html, body {
 /* End Carousel */
 
 /* Image & Text content */
+.text-image-1 {
+    margin-top: 1.5rem;
+}
+
 .image-and-text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 28px 20px;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
 }
 
 .image-text-outer-container {
@@ -830,10 +839,19 @@ html, body {
 
 .image-and-text-container h3 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 4%;
     padding-bottom: 18px;
-    margin-top: 8px;
+    margin-top: 38px;
+}
+
+.image-and-text-container figure {
+    margin: 0 !important;
+}
+
+.inner-text-container-second-card h3 {
+    margin-top: 21px !important;
+    font-size: 20px !important;
 }
 
 .image-and-text-container figure {
@@ -860,15 +878,24 @@ html, body {
     display: none;
 }
 
-
-.inner-text-container.with-padding {
-    padding-left: 24px;
+.inner-text-container .content {
+    width: 343px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #000;
 }
 
 .map-pin-text-container p {
+    width: 500px;
     margin-left: 14px;
     font-size: 12px;
     color: #000;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+}
+
+.second-card-content {
+    width: 350px !important;
 }
 
 @media (min-width: 768px) {
@@ -877,8 +904,12 @@ html, body {
         height: 747px;
         flex-direction: row;
         align-items: center;
-        margin: 20px auto;
+        margin: 70px auto;
         text-align: left;
+    }
+
+    .image-and-text-container.reverse {
+        justify-content: space-between;
     }
 
     .image-and-text-img.first-mug-avanti-image {
@@ -905,16 +936,34 @@ html, body {
     }
 
     .inner-text-container {
-        max-width: 510px;
+        width: 476px;
         height: 536px;
+    }
+
+    .inner-text-container-second-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner-text-container-second-card h3 {
+        font-size: 30px !important;
+        font-weight: 700 !important;
+        margin-left: 48px;
     }
 
     .inner-text-container.with-padding {
         padding-left: 67px;
     }
 
+    .inner-text-container .content {
+        width: 487px;
+    }
+
     .inner-text-container p {
         font-size: 18px;
+        color: #000;
     }
 
     .image-and-text-container .mobile-text {
@@ -1201,15 +1250,11 @@ footer .social-icons-footer {
 }
 
 .footer-section {
-    padding:  16px;
+    padding:  0 16px;
 }
 
 .footer-section ul {
-    padding-left: 0;
-}
-
-.footer-section ul li {
-    list-style: none;
+    padding-top: 14px;
 }
 
 .footer-section ul li h5 {

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Deixar o menu sempre visível durante o desenvolvimento, remover depois //
+  // TODO: Deixar o menu sempre visível durante o desenvolvimento, remover depois //
   // if (megaMenu) {
   //   megaMenu.classList.add("show");
   // }
