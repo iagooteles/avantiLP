@@ -6,21 +6,6 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 🔗 **Acesse o layout no Figma:**  
 [Innovation Class - Figma](https://www.figma.com/proto/DqtFxC6312M32mLt8FpJjq/innovation-class?page-id=13%3A673&node-id=13-920&viewport=346%2C140%2C0.11&t=HyGGDSs83f1vbqMJ-1&scaling=scale-down&content-scaling=fixed)
 
----
-
-## Observações:
-- Esse projeto foi feito respeitando o modelo mobile-first;
-
-- No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em data/card-info-carousel.js. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html;
-
-- No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos, ele busca pela classe 'text-image-' no nosso index.html e faz a lógica para a renderização do componente de acordo com o seu número(lógica da função 'getCardIndexFromContainer'). Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
-   OBS: Visto que os componentes são parecidos, mas levemente diferentes, foi-se reaproveitado parte da sua estrutura para a construção de ambos, a seguir foi implementado uma forma que se uma classe fosse presente na estrutura html seria renderizado o componente com Texto na direita e Imagem na esquerda, caso fosse a outra classe seria o contrário. Assim reaproveitamentos sua estutura e deixamos o nosso html mais limpo.
-
-- ./scripts/menu-nav.js é responsável pela renderização dos itens da navbar, tirando o componente imagem. Ele busca as informações de ./data/categories.json; Dessa forma é possível facilmente alterar o nosso .json e ver as mudanças em tela;
-   OBS: Como a imagem ao final do nav é fixa, são apenas 8 linhas de código no .html, e vai ficar sempre lá, não houve necessidade de colocar sua lógica de renderização em um arquivo externo; Caso fosse outro componente mais extenso, que tivesse mais linhas de código ou 'poluísse' o .html de alguma forma, seria delegado sua lógica de renderização em um arquivo externo.
-
-- ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`
-
 ## ✅ Requisitos para o Desenvolvimento
 
 ### 1️⃣ Estruturar o HTML conforme o layout do Figma
@@ -48,6 +33,40 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - **Figma**
 
 ---
+
+## Observações:
+- Esse projeto foi feito respeitando o modelo mobile-first;
+
+- No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em /data/cardInfoCarousel.json. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html; Além disso, quando for necessário alterar alguma informação de algum card isso pode ser facilmente feito no arquivo json;
+
+- No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos, ele busca pela classe 'text-image-' no nosso index.html e faz a lógica para a renderização do componente de acordo com o seu número presente na classe. Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
+   OBS: Visto que os componentes são parecidos, mas levemente diferentes, foi-se reaproveitado parte da sua estrutura para a construção de ambos, a seguir foi implementado uma forma que se uma classe fosse presente na estrutura html seria renderizado o componente com Texto na direita e Imagem na esquerda, caso fosse a outra classe seria o contrário. Assim reaproveitamentos sua estutura e deixamos o nosso html mais limpo.
+
+- ./scripts/menuNav.js é responsável pela renderização dos itens da navbar, tirando o componente imagem. Ele busca as informações de ./data/categories.json; Dessa forma é possível facilmente alterar o nosso .json e ver as mudanças em tela;
+   OBS: Como a imagem ao final do nav é fixa, são apenas 8 linhas de código no .html, e vai ficar sempre lá, não houve necessidade de colocar sua lógica de renderização em um arquivo externo; Caso fosse outro componente mais extenso, que tivesse mais linhas de código ou 'poluísse' o .html de alguma forma, seria delegado sua lógica de renderização em um arquivo externo.
+
+- ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`;
+
+- Os arquivos js possuem Docstrings que explicam suas funções e objetivos;
+
+---
+
+## 🦴 Estrutura da Landing Page
+- Ticket promocial;
+- Header;
+- Nav(Apenas em desktop);
+- Hero banner (carousel no mobile);
+- Carousel de cards;
+- Image & text;
+- Text & Image(Image & Text no mobile);
+- Image & text;
+- Carousel de cards 2(Apenas em desktop);
+- Banner Contato
+- Newsletter;
+- Footer;
+- Supported by;
+
+.....
 
 ## 📂 Estrutura do projeto
 
@@ -93,14 +112,6 @@ AvantiLandingPage/
 4. Opção de uso: Live Server;
 
 ---
-
-### Features implementadas
-
-- HEAD Coupon; (100%)
-- carousel;
-- Navbar; * Ainda é preciso implementar as categorias *
-- Footer;
-- Supported By;
 
 TODO: Colocar mais tratamentos de erros com fetch.then.catch ;
 

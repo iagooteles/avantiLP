@@ -48,6 +48,10 @@ html, body {
 /* End Coupon  */
 
 /* Header */
+header {
+    padding: 0 !important;
+}
+
 .header-container {
     width: 100%;
     margin: 0 auto;
@@ -155,6 +159,10 @@ html, body {
 /* End Header */
 
 /* Search modal  */
+nav {
+    padding-top: 0 !important;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -195,6 +203,20 @@ html, body {
     cursor: pointer;
 }
 
+.submenu-titulo {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  .submenu-colunas {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+/* TODO: Testar isso dps  */
 @media (min-width: 992px) {
     .modal-box {
         width: 600px;
@@ -230,6 +252,10 @@ html, body {
 
 .nav-item.dropdown:hover .mega-menu {
     display: block;
+}
+
+.nav-link {
+    color: #000;
 }
 
 .submenu {
