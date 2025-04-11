@@ -85,12 +85,14 @@ AvantiLandingPage/
 │   ├── heroBannerData.json         # Categorias exibidas na página inicial
 │   └── textImageData.json          # Informações para os componentes de texto com imagem
 │
+├── html/                           # Arquivos .html que vão ser injetados no nosso index.html
 ├── scripts/                        # Scripts JavaScript da página
 │   ├── carousel.js                 # Lógica do carrossel de produtos
 │   ├── departamentosNav.js         # Lógica do Dropdown de departamentos da navbar
 │   ├── footerToggle.js             # Lógica de girar a seta do Accordion
 │   ├── heroBannerLoader.js         # Renderização do componente Hero Banner
 │   ├── menuNavAllCategories.js     # Comportamento do menu de navegação de todas as categorias
+│   ├── navbarImgLoader.js          # Script que vai injetar o html da imagem do navbar
 │   ├── search.js                   # Funcionalidade de busca
 │   └── textImage.js                # Renderização dos componentes de texto com imagem
 │

@@ -1,6 +1,7 @@
 let megaMenu;
 let hideTimeout = 300;
 let categoriasContainer;
+let navbarImgPath = "../html/navbarImg.html";
 
 document.addEventListener("DOMContentLoaded", function () {
   megaMenu = document.querySelector(".mega-menu");
@@ -33,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const megaMenuContent = dropdownMenu.querySelector(".mega-menu-content");
       categoriasContainer = document.createElement("div");
       const submenuContainer = document.createElement("div");
-      const imgContainer = dropdownMenu.querySelector(".dropdown-img-container");
 
       submenuContainer.classList.add("mega-menu-submenu-container");
 
@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
       megaMenuContent.innerHTML = "";
       megaMenuContent.appendChild(categoriasContainer);
       megaMenuContent.appendChild(submenuContainer);
-      megaMenuContent.appendChild(imgContainer);
+
+      createDropdownImgPlaceholder(megaMenuContent);
 
       hoverListener(categoriasContainer, submenuContainer);
     })
@@ -123,6 +124,18 @@ function createSubMenu(categoria, index) {
   });
 
   return submenu;
+}
+
+/**
+ * Cria um container de imagem no menu para ser posteriormente preenchido
+ * por um script de injeção externa como navbarImgLoader.js.
+ *
+ * @param {HTMLElement} container - O elemento onde o placeholder será inserido
+ */
+function createDropdownImgPlaceholder(container) {
+  const imgPlaceholder = document.createElement("div");
+  imgPlaceholder.classList.add("dropdown-img-placeholder");
+  container.appendChild(imgPlaceholder);
 }
 
 /**
