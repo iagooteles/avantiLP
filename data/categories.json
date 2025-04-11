@@ -4,9 +4,9 @@
         "id": 1,
         "nome": "Departamento1",
         "subcategorias": [
-          ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"],
+          ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"],
           ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"],
-          ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"]
+          ["Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1", "Categoria1"]
         ]
       },
       {

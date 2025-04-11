@@ -1,7 +1,8 @@
 {
     "title": "SUPER",
     "highlight": "SALE",
-    "description": "Selected items up to",
+    "descriptionMobile": "Selected items up to",
+    "descriptionDesktop": "Itens selecionados com até",
     "discount": "50%OFF"
 }
   

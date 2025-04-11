@@ -1,0 +1,99 @@
+footer {
+    background-color: #f5f5f5;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-inner-container {
+    --bs-gutter-x: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+footer .social-icons-footer {
+    margin-top: 40px;
+    margin-bottom: 48px;
+    gap: 40px;
+}
+
+.banking-icons-footer {
+    width: 290px;
+    margin: 40px auto 48px;
+    margin-top: 40px;
+    margin-bottom: 48px;
+    gap: 40px;
+}
+
+.footer-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-toggle .arrow {
+    transition: transform 0.3s;
+}
+
+.footer-section {
+    padding:  0 16px;
+}
+
+.footer-section ul {
+    padding-top: 14px;
+}
+
+.footer-section ul li h5 {
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons-row-1 {
+    width: 289px;
+    height: 19px;
+}
+
+.footer-icons-row-2 {
+    width: 224px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        width: 100%;
+    }
+
+    .footer-container {
+        width: 1160px;
+        margin: 0 auto;
+    }
+
+    .footer-icons > img {
+        margin-right: 40px;
+    }
+    
+    .footer-icons-row-1 {
+        padding-right: 0;
+    }
+    
+    .footer-icons-row-2 {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .banking-icons-footer {
+        width: 546px;
+        gap: 0;
+    }
+}

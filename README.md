@@ -47,7 +47,9 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 - ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`;
 
-- Os arquivos js possuem Docstrings que explicam suas funções e objetivos;
+- Os arquivos .js possuem Docstrings que explicam suas funções e objetivos;
+
+- Cada componente possui um arquivo .css próprio para facilitar sua manutenção;
 
 ---
 
@@ -75,7 +77,7 @@ AvantiLandingPage/
 ├── Assets/                         # Arquivos estáticos (imagens e ícones)
 │   ├── favicon/                    # Favicon do site
 │   ├── icons/                      # Ícones do site
-│   └── images/                     # Imagens usadas na página
+│   └── images/                     # Imagens usadas na página, organizadas por componentes
 │
 ├── data/                           # Arquivos de dados em JSON
 │   ├── cardInfoCarousel.json       # Dados para os cards do carrossel
@@ -85,14 +87,14 @@ AvantiLandingPage/
 │
 ├── scripts/                        # Scripts JavaScript da página
 │   ├── carousel.js                 # Lógica do carrossel de produtos
+│   ├── departamentosNav.js         # Lógica do Dropdown de departamentos da navbar
 │   ├── footerToggle.js             # Lógica de girar a seta do Accordion
 │   ├── heroBannerLoader.js         # Renderização do componente Hero Banner
-│   ├── menuNav.js                  # Comportamento do menu de navegação
+│   ├── menuNavAllCategories.js     # Comportamento do menu de navegação de todas as categorias
 │   ├── search.js                   # Funcionalidade de busca
 │   └── textImage.js                # Renderização dos componentes de texto com imagem
 │
-├── styles/                         
-│   └── style.css                   # Arquivo principal de estilos
+├── styles/                         # Pasta contendo todos os estilos         
 │
 ├── index.html                      # Página principal da landing page
 └── README.md                       # Documentação do projeto
@@ -116,3 +118,7 @@ AvantiLandingPage/
 TODO: Colocar mais tratamentos de erros com fetch.then.catch ;
 
 TODO: Fix desktop view / imageText e checar o resto.
+
+TODO: Colocar nav para renderizar de arquivo externo.
+
+Continuar aula da 17;

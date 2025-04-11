@@ -1,0 +1,31 @@
+/* TODO: revisado  */
+.coupon {
+    background: #005CFF;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 4px 4px;
+}
+
+.coupon p {
+    font-size: 14px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.coupon-discount-value {
+    background: #6220C1;
+    border-radius: 4px;
+    padding: 0 4px;
+}
+
+.discount-coupon {
+    font-style: italic;
+    font-weight: 500;
+}
+
+@media (min-width: 769px) {
+    .coupon {
+        height: 30px;
+    }
+}

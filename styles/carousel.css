@@ -1,0 +1,265 @@
+.container-carousel {
+    padding: 0 16px;
+    width: 100%;
+}
+
+.view-more-container {
+    width: 358px;
+    margin-bottom: 16px;
+}
+
+.view-more-container span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.view-more-container button {
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    flex: 0 0 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.card {
+    width: 174px;
+    height: 348px;
+    margin: 0;
+    margin-right:10px;
+}
+
+.card-body {
+    padding: 0 8px;
+}
+
+.card-image-container {
+    margin-top: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.new-item-card-tag {
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    padding: 3px 6px;
+    font-size: 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #00264E;
+    color: #fff;
+}
+
+.card-body img {
+    width: 158px;
+    height: 158px;
+}
+
+.card-body h3 {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    min-height: 30px;
+}
+
+.card-prices-container {
+    display: flex;
+    gap: 0;
+}
+
+.off-discount-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.off-discount-amount {
+    background-color: #5EC0BE;
+    margin-top: -16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    align-self: center;
+    font-size: 11px;
+    margin-left: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+}
+
+.card-prices p {
+    margin: 0;
+}
+
+.card-prices .default-price {
+    text-decoration: line-through;
+    font-weight: 400;
+    width: 58px;
+    height: 16px;
+    font-size: 12px;
+    color: #303030;
+}
+
+.card-prices .discount-price {
+    font-size: 16px;
+    color: #000;
+}
+
+.card-bottom-text {
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card-body button {
+    background-color: #005CFF;
+    width: 158px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    opacity: 1 !important;
+}
+
+.carousel-control-prev img,
+.carousel-control-next img{
+    width: 30px !important;
+    height: 30x !important;
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #005CFF;
+    border-radius: 100%;
+}
+
+.carousel-control-prev {
+    left: -15px;
+}
+
+.carousel-control-next {
+    right: -15px;
+}
+
+.card-carousel .carousel-indicators {
+    bottom: -48px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+}
+
+.carousel-indicators button {
+    background-color: #303030 !important;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+
+    .carousel-indicators {
+        display: flex !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .view-more-container {
+        width: 1210px;
+        margin-bottom: 19px;
+    }
+    
+    .container-carousel {
+        width: 1220px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .carousel-item {
+        flex: 0 0 50%;
+    }
+
+    .card {
+        width: 228px;
+        height: 409px; 
+        margin-right: 12px;
+    }
+
+    .card-body img {
+        width: 212px;
+        height: 222px;
+    }
+
+    .card-body button {
+        width: 222px;
+    }
+    
+    .view-more-container span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .view-more-container button {
+        text-decoration: none;
+        background-color: #fff;
+        border: none;
+        margin-right: 22px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .off-discount-amount {
+        text-decoration: underline;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .view-more-container {
+        width: 1270px;
+    }
+
+    .container-carousel {
+        width: 1280px;
+    }    
+    
+    .card {
+        width: 238px;
+        height: 409px;
+        margin-right: 14.5px;
+    }
+}

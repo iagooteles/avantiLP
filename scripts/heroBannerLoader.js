@@ -22,8 +22,9 @@ async function loadHeroBannerContent() {
       const bannerHTML = `
         <div>
           <h2>${data.title}<span class="super-sale-hero-banner">${data.highlight}</span></h2>
-          <p class="selected-itens-hero-carousel">${data.description}</p>
-          <span class="hero-banner-discount-amount">${data.discount}</span>
+          <p class="selected-itens-hero-carousel d-block d-md-none">${data.descriptionMobile}</p>
+          <p class="selected-itens-hero-carousel d-none d-md-block">${data.descriptionDesktop}</p>
+          <p class="hero-banner-discount-amount">${data.discount}</p>
         </div>
       `;
   

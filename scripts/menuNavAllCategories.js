@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // }
 
   dropdownTrigger.addEventListener("mouseenter", showMenu);
-  dropdownTrigger.addEventListener("mouseleave", hideMenu);
   megaMenu.addEventListener("mouseenter", showMenu);
+
+  dropdownTrigger.addEventListener("mouseleave", hideMenu);
   megaMenu.addEventListener("mouseleave", hideMenu);
 
   fetch("./../data/categories.json")
@@ -32,31 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const megaMenuContent = dropdownMenu.querySelector(".mega-menu-content");
       categoriasContainer = document.createElement("div");
       const submenuContainer = document.createElement("div");
-      const imgContainer = dropdownMenu.querySelector(
-        ".dropdown-img-container"
-      );
+      const imgContainer = dropdownMenu.querySelector(".dropdown-img-container");
 
-      submenuContainer.classList.add("left-align");
       submenuContainer.classList.add("mega-menu-submenu-container");
+
       categoriasContainer.classList.add("mega-menu-categories");
 
       categorias.forEach((categoria, index) => {
         categoriasContainer.appendChild(createCategoryLink(categoria, index));
         submenuContainer.appendChild(createSubMenu(categoria, index));
-      });
-
-      categorias.slice(1, 8).forEach((categoria, index) => {
-        const li = document.createElement("li");
-        li.className = "nav-item";
-
-        const a = document.createElement("a");
-        a.className = "nav-link dropdown-toggle departamento-link";
-        a.href = "#";
-        a.setAttribute("data-index", index + 1);
-        a.textContent = categoria.nome;
-
-        li.appendChild(a);
-        navDepartamentos.appendChild(li);
       });
 
       megaMenuContent.innerHTML = "";
@@ -65,39 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
       megaMenuContent.appendChild(imgContainer);
 
       hoverListener(categoriasContainer, submenuContainer);
-
-      document.querySelectorAll(".departamento-link").forEach((link) => {
-        link.addEventListener("mouseenter", (e) => {
-
-          const index = parseInt(link.getAttribute("data-index"));
-          const submenuId = document.querySelectorAll(
-            ".mega-menu-categories a"
-          )[index].dataset.submenuId;
-
-          hideCategorias();
-          showMenu();
-
-          categoriasContainer
-            .querySelectorAll("a")
-            .forEach((el) => el.classList.remove("active-category"));
-          const categoryLink = categoriasContainer.querySelector(
-            `a[data-submenu-id="${submenuId}"]`
-          );
-          if (categoryLink) categoryLink.classList.add("active-category");
-
-          submenuContainer
-            .querySelectorAll(".mega-menu-submenu")
-            .forEach((sub) => sub.classList.add("d-none"));
-          const targetSubmenu = submenuContainer.querySelector(
-            `#submenu-${submenuId}`
-          );
-          if (targetSubmenu) targetSubmenu.classList.remove("d-none");
-        });
-
-        link.addEventListener("mouseleave", () => {
-          hideMenu();
-        });
-      });
     })
     .catch((error) => {
       console.error("Erro ao carregar categorias:", error);
@@ -128,7 +80,7 @@ function hideMenu() {
     megaMenu.classList.remove("show");
     dropdownTrigger.classList.remove("show");
     dropdownTrigger.setAttribute("aria-expanded", "false");
-  }, 300);
+  }, 50);
 }
 
 /**
@@ -182,7 +134,8 @@ function hoverListener(categoriasContainer, submenuContainer) {
       categoriasContainer
         .querySelectorAll("a")
         .forEach((el) => el.classList.remove("active-category"));
-      // link.classList.add('active-category');
+
+      link.classList.add('active-category');
 
       submenuContainer
         .querySelectorAll(".mega-menu-submenu")
