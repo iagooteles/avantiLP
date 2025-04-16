@@ -20,6 +20,9 @@ function openModal(value, input) {
 
   const modalOverlay = createModalOverlay();
   const modalBox = createModalBox(value, input, modalOverlay);
+  
+  modalOverlay.style.animation = 'fadeOverlayIn 0.3s ease forwards';
+  modalBox.style.animation = 'modalFadeIn 0.3s ease forwards';
 
   modalOverlay.appendChild(modalBox);
   document.body.appendChild(modalOverlay);
@@ -53,7 +56,7 @@ function createModalBox(value, input, modalOverlay) {
   const closeBtn = document.createElement("span");
   closeBtn.classList.add("modal-close");
   closeBtn.innerHTML = "&times;";
-  closeBtn.addEventListener("click", () => closeModal(modalOverlay, input));
+  closeBtn.addEventListener("click", () => closeModal(modalOverlay, box, input));
 
   const content = document.createElement("p");
   content.textContent = `Você buscou por: "${value}"`;
@@ -69,10 +72,15 @@ function createModalBox(value, input, modalOverlay) {
  * @param {HTMLElement} modalOverlay 
  * @param {HTMLElement} input 
  */
-function closeModal(modalOverlay, input) {
-  modalOverlay.remove();
-  input.disabled = false;
-  modalAberto = false;
+function closeModal(modalOverlay, modalBox, input) {
+  modalOverlay.style.animation = 'fadeOverlayOut 0.3s ease forwards';
+  modalBox.style.animation = 'modalFadeOut 0.3s ease forwards';
+
+  setTimeout(() => {
+    modalOverlay.remove();
+    input.disabled = false;
+    modalAberto = false;
+  }, 300);
 }
 
 /**
@@ -83,7 +91,29 @@ function handleSearch(input) {
   const value = input.value.trim();
   if (value) {
     openModal(value, input);
+    input.value = "";
+  } else {
+    showEmptyInputMessage(input);
   }
+}
+
+/**
+ * Mostra uma mensagem temporária no input se ele estiver vazio.
+ * @param {HTMLElement} input 
+ */
+function showEmptyInputMessage(input) {
+  const originalPlaceholder = input.placeholder;
+  input.placeholder = "Por favor digite algo";
+  input.classList.add("input-error");
+  input.classList.add("shake");
+
+  input.value = "";
+
+  setTimeout(() => {
+    input.placeholder = originalPlaceholder;
+    input.classList.remove("input-error");
+    input.classList.remove("shake");
+  }, 4500);
 }
 
 /**

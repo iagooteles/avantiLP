@@ -45,7 +45,7 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - ./scripts/menuNav.js é responsável pela renderização dos itens da navbar, tirando o componente imagem. Ele busca as informações de ./data/categories.json; Dessa forma é possível facilmente alterar o nosso .json e ver as mudanças em tela;
    OBS: Como a imagem ao final do nav é fixa, são apenas 8 linhas de código no .html, e vai ficar sempre lá, não houve necessidade de colocar sua lógica de renderização em um arquivo externo; Caso fosse outro componente mais extenso, que tivesse mais linhas de código ou 'poluísse' o .html de alguma forma, seria delegado sua lógica de renderização em um arquivo externo.
 
-- ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`;
+- ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`; O modal possui animação, e também existe uma mensagem de feedback com animação se o usuário tentar pesquisar por algo com o input vazio;
 
 - Os arquivos .js possuem Docstrings que explicam suas funções e objetivos;
 
@@ -123,4 +123,4 @@ TODO: Fix desktop view / imageText e checar o resto.
 
 TODO: Colocar nav para renderizar de arquivo externo.
 
-Continuar aula da 17;
+Continuar aula da 32;
