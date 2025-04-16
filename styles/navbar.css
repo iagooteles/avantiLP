@@ -18,7 +18,7 @@
 }
 
 .navbar-nav > li:not(:first-child) > .dropdown-toggle {
-    margin-left: 34px;
+    margin-left: 15px;
 }
 
 .container-navbar {
