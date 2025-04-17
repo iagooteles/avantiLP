@@ -1,4 +1,3 @@
-/* TODO: Revisado  */
 .supported-by {
     background-color: #fff;
     text-align: center;
@@ -13,7 +12,7 @@
 .supported-by p {
     font-size: 12px;
     width: 358px;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     color: #303030;
 }
 
@@ -26,7 +25,13 @@
 
 @media (min-width: 768px) {
     .supported-by p {
-        width: 1074px;
+        width: 700px;
         line-height: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .supported-by p {
+        width: 1074px;
     }
 }

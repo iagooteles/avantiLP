@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("footerLoaded", function () {
   const toggles = document.querySelectorAll(".footer-toggle");
 
   toggles.forEach(button => {
     const targetId = button.getAttribute("data-bs-target");
     const targetEl = document.querySelector(targetId);
+
+    if (!targetEl) return;
 
     targetEl.addEventListener("hidden.bs.collapse", () => {
       rotateArrow(button, false);
@@ -39,7 +41,9 @@ function closeAllDropdownsExcept(currentId) {
  */
 function rotateArrow(button, shouldRotate) {
   const arrow = button.querySelector(".arrow");
+  
   if (arrow) {
+    arrow.style.transition = "transform 0.3s ease";
     arrow.style.transform = shouldRotate ? "rotate(180deg)" : "rotate(0deg)";
   }
 }

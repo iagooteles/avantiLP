@@ -14,7 +14,7 @@
     />
     <!-- End Fonte -->
 
-    <link rel="icon" href="./Assets/favicon/favicon-avanti.png" type="image/png" />
+    <link rel="icon" href="/public/assets/favicon/favicon-avanti.png" type="image/png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -70,7 +70,7 @@
           <!-- Logo -->
           <a class="navbar-brand mx-auto mx-lg-0" href="#">
             <img
-              src="./assets/images/header/logo.png"
+              src="/public/assets/images/header/logo.png"
               alt="Avanti logo"
               title="Avanti logo"
               height="27"
@@ -90,7 +90,7 @@
               />
               <button class="search-btn" type="button">
                 <img
-                  src="./assets/icons/search-icon.svg"
+                  src="/public/assets/icons/search-icon.svg"
                   alt="Buscar icon"
                   title="Buscar icon"
                   height="20"
@@ -102,7 +102,7 @@
           <!-- Carrinho (Mobile) -->
           <a href="#" class="position-relative d-lg-none cart-mobile">
             <img
-              src="./assets/icons/cart-icon.svg"
+              src="/public/assets/icons/cart-icon.svg"
               alt="Carrinho"
               title="Carrinho"
               height="30"
@@ -137,7 +137,7 @@
           <!-- Área do perfil e carrinho (Desktop) -->
           <div class="d-none d-lg-flex align-items-center">
             <img
-              src="./assets/icons/profile-icon.svg"
+              src="/public/assets/icons/profile-icon.svg"
               alt="Perfil"
               title="Perfil"
               height="24"
@@ -149,7 +149,7 @@
             </div>
             <a href="#" class="position-relative mx-4">
               <img
-                src="./assets/icons/cart-icon.svg"
+                src="/public/assets/icons/cart-icon.svg"
                 alt="Carrinho"
                 title="Carrinho"
                 height="28"
@@ -174,7 +174,7 @@
             />
             <button class="search-btn" type="button">
               <img
-                src="./assets/icons/search-icon.svg"
+                src="/public/assets/icons/search-icon.svg"
                 alt="Buscar icon"
                 title="Buscar icon"
                 height="20"
@@ -186,7 +186,7 @@
       <!-- End Header -->
 
       <!-- Nav  -->
-      <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <nav class="navbar navbar-expand-lg d-none d-xxl-block">
         <div class="container-navbar">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
@@ -361,7 +361,7 @@
 
     <!-- TODO: Imagem do mobile não parece a mesma que a do desktop  ??   -->
     <!-- Hero Banner Carousel Mobile -->
-    <div
+    <section
       id="heroBannerCarousel"
       class="hero-carousel d-md-none carousel slide"
       data-bs-ride="carousel"
@@ -404,7 +404,7 @@
           data-bs-slide-to="2"
         ></button>
       </div>
-    </div>
+    </section>
     <!-- End Hero Banner -->
 
     <!-- Carousel -->
@@ -418,7 +418,7 @@
       <div
         id="cardCarousel1"
         class="carousel slide card-carousel"
-        data-bs-ride="carousel"
+        data-bs-ride="false"
         data-bs-interval="5000"
       >
         <div class="carousel-indicators">
@@ -450,7 +450,7 @@
           data-bs-slide="prev"
         >
           <img
-            src="./assets/images/utils/arrow-left.png"
+            src="/public/assets/images/utils/arrow-left.png"
             alt="Arrow left carousel"
             title="Arrow left carousel"
           />
@@ -462,7 +462,7 @@
           data-bs-slide="next"
         >
           <img
-            src="./assets/images/utils/arrow-right.png"
+            src="/public/assets/images/utils/arrow-right.png"
             alt="Arrow right carousel"
             title="Arrow right carousel"
           />
@@ -524,7 +524,7 @@
           data-bs-slide="prev"
         >
           <img
-            src="./assets/images/utils/arrow-left.png"
+            src="/public/assets/images/utils/arrow-left.png"
             alt="Arrow left carousel"
             title="Arrow left carousel"
           />
@@ -536,7 +536,7 @@
           data-bs-slide="next"
         >
           <img
-            src="./assets/images/utils/arrow-right.png"
+            src="/public/assets/images/utils/arrow-right.png"
             alt="Arrow right carousel"
             title="Arrow right carousel"
           />
@@ -546,355 +546,41 @@
     <!-- End Carousel 2 -->
 
     <!-- Contato Section  -->
-    <section class="contato-section">
-      <div class="img-contato-container">
-        <div class="img-blur-overlay"></div>
-        <img
-          src="./assets/images/avanti/avanti-place.png"
-          alt="Banner Contato"
-          title="Banner contato"
-          class="img-contato"
-        />
-        <div class="linha-container">
-          <div class="contato-bar">
-            <p>
-              Entre em contato conosco e verifique a disponibilidade para sua
-              região!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="contato-placeholder"></section>
     <!-- EndContato Section  -->
 
     <!-- Newsletter -->
-    <section class="newsletter-container d-flex flex-column align-items-center">
-      <h3>Cadastre-se na nossa <span>newsletter</span></h3>
-      <div
-        class="newsletter-form-container d-flex justify-content-center align-items-center"
-      >
-        <div class="newsletter-form-inner-container d-flex flex-column">
-          <form class="newsletter-form d-flex">
-            <input
-              class="newsletter-name-input"
-              type="text"
-              name="nome"
-              placeholder="Digite seu nome"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Digite seu e-mail"
-              required
-            />
-
-            <label class="checkbox-container">
-              <input type="checkbox" required />
-              <span
-                >Estou de acordo com a
-                <a href="#">Política de Privacidade</a></span
-              >
-            </label>
-
-            <button type="submit">Cadastrar</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    <section class="newsletter-placeholder"></section>
     <!-- End Newsletter -->
 
     <!-- Footer  -->
-    <footer class="mt-4">
-      <div class="footer-container">
-        <div class="row footer-inner-container">
-          <div
-            class="col-md-3 footer-icons d-flex flex-column align-items-center"
-          >
-            <img
-              src="./assets/images/footer/avanti-logo.png"
-              alt="Avanti logo"
-              title="Avanti logo"
-              style="width: 152px; height: 27px"
-            />
-            <div class="social-icons-footer d-flex align-items-center">
-              <a href="#"
-                ><img
-                  src="./assets/images/footer/instagram-logo.png"
-                  alt="Instagram logo"
-                  title="Instagram logo"
-                  style="width: 19px; height: 19px"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./assets/images/footer/facebook-logo.png"
-                  alt="Facebook logo"
-                  title="Facebook logo"
-                  style="width: 10.4px; height: 22.35px"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./assets/images/footer/youtube-logo.png"
-                  alt="Youtube logo"
-                  title="Youtube logo"
-                  style="width: 26px; height: 26px"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./assets/images/footer/tiktok-logo.png"
-                  alt="TikTok logo"
-                  title="Tiktok logo"
-                  style="width: 18.2px; height: 21px"
-              /></a>
-            </div>
-          </div>
-
-          <div class="col-md-3 footer-section">
-            <button
-              class="footer-toggle d-md-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#institucional"
-            >
-              Institucional
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 12 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="arrow"
-              >
-                <path
-                  d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z"
-                  fill="#005CFF"
-                />
-              </svg>
-            </button>
-            <h5 class="d-none d-md-block">Institucional</h5>
-            <ul class="list-unstyled collapse d-md-block" id="institucional">
-              <li><h5>Sobre nós</h5></li>
-              <li><h5>Nossas Lojas</h5></li>
-              <li><h5>Privacidade e segurança</h5></li>
-              <li><h5>Termos e Condições</h5></li>
-            </ul>
-          </div>
-
-          <hr class="d-md-none" />
-
-          <div class="col-md-3 footer-section">
-            <button
-              class="footer-toggle d-md-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#ajuda"
-            >
-              Central de Ajuda
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 12 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="arrow"
-              >
-                <path
-                  d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z"
-                  fill="#005CFF"
-                />
-              </svg>
-            </button>
-            <h5 class="d-none d-md-block">Central de Ajuda</h5>
-            <ul class="list-unstyled collapse d-md-block" id="ajuda">
-              <li><h5>Fale Conosco</h5></li>
-              <li><h5>Frete e Entrega</h5></li>
-              <li><h5>Trocas e Devoluções</h5></li>
-              <li><h5>Formas de Pagamento</h5></li>
-              <li><h5>FAQ</h5></li>
-            </ul>
-          </div>
-
-          <hr class="d-md-none" />
-
-          <div class="col-md-3 footer-section">
-            <button
-              class="footer-toggle d-md-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#atendimento"
-            >
-              Atendimento
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 12 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="arrow"
-              >
-                <path
-                  d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z"
-                  fill="#005CFF"
-                />
-              </svg>
-            </button>
-            <h5 class="d-none d-md-block">Atendimento</h5>
-            <ul class="list-unstyled collapse d-md-block" id="atendimento">
-              <li>
-                <h5><strong>Telefone:</strong> (00) 1234-5678</h5>
-              </li>
-              <li>
-                <h5><strong>E-mail:</strong> exemplo@exemplo.com.br</h5>
-              </li>
-              <li>
-                <h5><strong>Horário de atendimento:</strong></h5>
-              </li>
-              <li><h5>Segunda a Sábado: 07h00 às 23h00</h5></li>
-              <li><h5>Domingo e Feriados: 07h00 às 21h00</h5></li>
-            </ul>
-          </div>
-
-          <hr class="d-md-none" />
-        </div>
-
-        <div
-          class="banking-icons-footer row justify-content-center text-center"
-        >
-          <div class="footer-icons-row-1 d-flex justify-content-between">
-            <div class="col-2">
-              <img
-                src="./assets/images/footer/amex-card-icon.png"
-                title="Amex card"
-                alt="Amex card icon"
-                style="width: 27px; height: 19px"
-              />
-            </div>
-            <div class="col-2">
-              <img
-                src="./assets/images/footer/mastercard-card-icon.png"
-                title="Mastercard card"
-                alt="Mastercard card icon"
-                style="width: 26px; height: 16px"
-              />
-            </div>
-            <div class="col-2">
-              <img
-                src="./assets/images/footer/visa-card-icon.png"
-                title="Visa card"
-                alt="Visa card icon"
-                style="width: 33px; height: 10px"
-              />
-            </div>
-            <div class="col-2">
-              <img
-                src="./assets/images/footer/hipercard-card-icon.png"
-                title="Hipercard card"
-                alt="Hipercard card icon"
-                style="width: 35px; height: 15px"
-              />
-            </div>
-            <div class="col-2">
-              <img
-                src="./assets/images/footer/cielo-card-icon.png"
-                title="Cielo card"
-                alt="Cielo card icon"
-                style="width: 32px; height: 12px"
-              />
-            </div>
-          </div>
-
-          <div class="footer-icons-row-2 d-flex justify-content-between">
-            <div class="col-3">
-              <img
-                src="./assets/images/footer/diners-club-card-icon.png"
-                title="Diners club"
-                alt="Diners club card icon"
-                style="width: 30px; height: 18.5px"
-              />
-            </div>
-            <div class="col-3">
-              <img
-                src="./assets/images/footer/paypal-card-icon.png"
-                title="Paypal card"
-                alt="Paypal card icon"
-                style="width: 32.5px; height: 9px"
-              />
-            </div>
-            <div class="col-3">
-              <img
-                src="./assets/images/footer/pix-icon.png"
-                title="Pix"
-                alt="Pix icon"
-                style="width: 23px; height: 23px"
-              />
-            </div>
-            <div class="col-3">
-              <img
-                src="./assets/images/footer/boleto-icon.png"
-                title="Boleto"
-                alt="Boleto icon"
-                style="width: 36px; height: 24.5px"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div class="footer-placeholder"></div>
     <!-- End Footer  -->
-
-    <!-- Supported by  -->
-    <section class="supported-by">
-      <p class="d-none d-md-block">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-      </p>
-      <p class="d-block d-md-none">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
-      </p>
-      <div class="supported-by-icons d-flex align-items-center">
-        <img
-          src="./assets/images/supported-by/letsEncrypt-icon.png"
-          alt="Lets Encrypt icon"
-          title="Lets Encrypt"
-          style="width: 38.5px; height: 30px"
-        />
-        <img
-          src="./assets/images/supported-by/vtex-icon.png"
-          alt="Vtex Icon certified"
-          title="Vtex"
-          style="width: 55.5px; height: 32px"
-        />
-        <div
-          class="divider"
-          style="width: 2px; height: 15px; background-color: #f5f5f5"
-        ></div>
-        <img
-          src="./assets/images/supported-by/avanti-logo.png"
-          alt="Avanti logo"
-          title="Avanti logo"
-          style="width: 57.5px; height: 10px"
-        />
-        <img
-          src="./assets/images/supported-by/vtex-icon2.png"
-          alt="Vtex icon"
-          title="Vtex"
-          style="width: 32px; height: 19px"
-        />
-      </div>
-    </section>
-    <!-- End Supported by  -->
+    
+    <!-- Supported By  -->
+    <div class="supported-by-placeholder"></div>
+    <!-- End Supported By  -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- Loaders  -->
+    <script src="./scripts/loaders/contatoLoader.js"></script>
+    <script src="./scripts/loaders/footerLoader.js"></script>
+    <script src="./scripts/loaders/heroBannerLoader.js"></script>
+    <script src="./scripts/loaders/navbarImgLoader.js"></script>
+    <script src="./scripts/loaders/newsletterLoader.js"></script>
+    <script src="./scripts/loaders/supportedByLoader.js"></script>
 
     <script src="./scripts/menuNavAllCategories.js"></script>
-    <script src="./scripts/navbarImgLoader.js"></script>
     <script src="./scripts/search.js"></script>
-    <script src="./scripts/heroBannerLoader.js"></script>
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/textImage.js"></script>
     <script src="./scripts/departamentosNav.js"></script>
     <script src="./scripts/footerToggle.js"></script>
+
   </body>
 </html>

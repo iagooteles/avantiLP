@@ -84,6 +84,40 @@
 }
 
 @media (min-width: 768px) {
+    .image-and-text-container img {
+        max-width: 652px;
+        height: 447px;
+    }
+
+    .inner-text-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .image-and-text-container h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .inner-text-container .content {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    .image-and-text-img.first-mug-avanti-image {
+        height: 447px;
+    }
+
+    .second-card-content {
+        width: 510px !important;
+    }
+
+    .map-pin-text-container p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1400px) {
     .image-and-text-container {
         width: 1177px;
         height: 747px;
@@ -103,6 +137,7 @@
 
     .image-and-text-container h3 {
         font-size: 30px;
+        text-align: start;
     }
 
     .image-and-text-container.reverse {
@@ -116,7 +151,6 @@
     }
 
     .image-and-text-container img {
-        max-width: 652px;
         height: 647px;
     }
 

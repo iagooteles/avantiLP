@@ -35,7 +35,7 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 ---
 
 ## Observações:
-- Esse projeto foi feito respeitando o modelo mobile-first;
+- Esse projeto foi feito respeitando o modelo mobile-first e possui estilizações para mobile, tablet e desktop;
 
 - No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em /data/cardInfoCarousel.json. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html; Além disso, quando for necessário alterar alguma informação de algum card isso pode ser facilmente feito no arquivo json;
 
@@ -74,25 +74,26 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 ```bash
 AvantiLandingPage/
-├── assets/                         # Arquivos estáticos (imagens e ícones)
-│   ├── favicon/                    # Favicon do site
-│   ├── icons/                      # Ícones do site
-│   └── images/                     # Imagens usadas na página, organizadas por componentes
+├── public/                         # Pasta pública com arquivos acessíveis diretamente
+│   ├── assets/                     # Arquivos estáticos (imagens, ícones, favicons)
+│   │   ├── favicon/                # Favicon do site
+│   │   ├── icons/                  # Ícones do site
+│   │   └── images/                 # Imagens organizadas por componentes
+│   │
+│   ├── data/                       # Arquivos de dados em JSON
+│   │   ├── cardInfoCarousel.json
+│   │   ├── categories.json
+│   │   ├── heroBannerData.json
+│   │
+│   └── html/                       # Componentes HTML que serão injetados dinamicamente
 │
-├── data/                           # Arquivos de dados em JSON
-│   ├── cardInfoCarousel.json       # Dados para os cards do carrossel
-│   ├── categories.json             # Categorias exibidas na página inicial
-│   ├── heroBannerData.json         # Categorias exibidas na página inicial
-│   └── textImageData.json          # Informações para os componentes de texto com imagem
-│
-├── html/                           # Arquivos .html que vão ser injetados no nosso index.html
+├── html/                           # Componentes .html que vão ser injetados no nosso index.html
 ├── scripts/                        # Scripts JavaScript da página
+│   ├── loaders/                    # Scripts para carregar componentes HTML separados em ./html
 │   ├── carousel.js                 # Lógica do carrossel de produtos
 │   ├── departamentosNav.js         # Lógica do Dropdown de departamentos da navbar
 │   ├── footerToggle.js             # Lógica de girar a seta do Accordion
-│   ├── heroBannerLoader.js         # Renderização do componente Hero Banner
 │   ├── menuNavAllCategories.js     # Comportamento do menu de navegação de todas as categorias
-│   ├── navbarImgLoader.js          # Script que vai injetar o html da imagem do navbar
 │   ├── search.js                   # Funcionalidade de busca
 │   └── textImage.js                # Renderização dos componentes de texto com imagem
 │
@@ -119,8 +120,12 @@ AvantiLandingPage/
 
 TODO: Colocar mais tratamentos de erros com fetch.then.catch ;
 
-TODO: Fix desktop view / imageText e checar o resto.
+TODO: fazer os breakpoints intermediários
 
 TODO: Colocar nav para renderizar de arquivo externo.
+
+TODO: Colocar imagem no dropdown departamentos
+
+TODO: Ver velocidade do carousel;
 
 Continuar aula da 32;

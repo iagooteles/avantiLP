@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', loadHeroBannerContent);
  */
 async function loadHeroBannerContent() {
     try {
-      const response = await fetch('./../data/heroBannerData.json');
+      const response = await fetch('/public/data/heroBannerData.json');
       const data = await response.json();
   
       const bannerHTML = `

@@ -3,7 +3,7 @@
 }
 
 .hero-banner {
-    background-image: url('../assets/images/hero-banner/chair-hero-banner.jpg');
+    background-image: url('/public/assets/images/hero-banner/chair-hero-banner.jpg');
     background-color: #E7E7EA;
     background-size: cover;
     background-position: -180px 70%;
@@ -65,6 +65,9 @@
 }
   
 @media (min-width: 768px) {
+}  
+
+@media (min-width: 1440px) {
     .hero-banner {
         height: 510px;
         background-position: 20% -350px;
@@ -72,7 +75,9 @@
     }
   
     .hero-banner div {
-        margin-right: 199px;
+        position: absolute;
+        left: 444px;
+        transform: translateY(-50%);
         width: 576px;
     }
 
@@ -81,7 +86,7 @@
     }
   
     .hero-banner h2 {
-        font-size: 100px;
+        font-size: 60px;
     }
   
     .hero-banner p {
@@ -94,9 +99,8 @@
   
     .hero-banner-discount-amount {
         font-size: 60px !important;
-        
         margin-top: 28px !important;
         display: flex;
         justify-content: center;
     }
-}  
+}

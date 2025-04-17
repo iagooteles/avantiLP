@@ -22,6 +22,7 @@
     height: 284px;
     background-color: #f5f5f5;
     padding-bottom: 38px;
+    border-radius: 8px;
 }
 
 .newsletter-form-inner-container {
@@ -82,6 +83,52 @@
 
 @media (min-width: 768px) {
     .newsletter-container {
+        height: 360px;
+    }
+    
+    .newsletter-container h3 {
+        font-size: 24px;
+    }
+
+    .newsletter-form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter-form-container {
+        width: 550px;
+        background-color: #dedede;
+        height: 320px;
+    }
+
+    .newsletter-form-inner-container input:not([type="checkbox"]) {
+        width: 400px;
+        margin: 8px auto;
+    }
+
+    .newsletter-form-inner-container input:not([type="checkbox"]), .checkbox-container{
+        margin: 16px 0;
+    }
+
+    .newsletter-form-inner-container input:not([type="checkbox"])::placeholder {
+        font-size: 18px;
+    }
+    
+    .checkbox-container span {
+        font-size: 14px;
+    }
+
+    .newsletter-form-inner-container {
+        width: 500px;
+    }
+    
+    .newsletter-form button {
+        width: 320px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .newsletter-container {
         width: 1260px;
         margin: 0 auto;
     }
@@ -94,6 +141,14 @@
         padding-bottom: 0;
         border-radius: 8px;
     }
+    
+    .newsletter-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        width: 100%;
+    }
 
     .newsletter-form-inner-container {
         margin-top: 0;
@@ -104,12 +159,12 @@
         margin-bottom: 0;
     }
 
-    .newsletter-form {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-        width: 100%;
+    .newsletter-form-inner-container input:not([type="checkbox"])::placeholder {
+        font-size: 14px;
+    }
+
+    .checkbox-container span {
+        font-size: 12px;
     }
 
     .newsletter-form input:not([type="checkbox"]) {
@@ -125,5 +180,6 @@
     .newsletter-form button {
         width: 121px;
         height: 48px;
+        margin-top: 12px;
     }
 }

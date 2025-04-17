@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const carousels = document.querySelectorAll(".card-carousel");
 
   try {
-    const cards = await fetchCarouselData("./../data/cardInfoCarousel.json");
+    const cards = await fetchCarouselData("/public/data/cardInfoCarousel.json");
 
     carousels.forEach((carousel) => renderCarousel(carousel, cards));
 
@@ -39,7 +39,8 @@ function renderCarousel(carousel, cards) {
   indicatorsContainer.innerHTML = "";
 
   const visibleCards = getVisibleCardsPerSlide();
-  const totalSlides = Math.min(Math.ceil(cards.length / visibleCards), 3);
+  
+  const totalSlides = Math.min(Math.ceil(cards.length / visibleCards), Math.ceil(cards.length / visibleCards));
 
   for (let i = 0; i < totalSlides; i++) {
     const slide = createSlide(cards, i, visibleCards);
@@ -59,7 +60,18 @@ function renderCarousel(carousel, cards) {
  * @returns {number}
  */
 function getVisibleCardsPerSlide() {
-  return window.innerWidth < 768 ? 2 : 5;
+  const width = window.innerWidth;
+  
+  // if (width < 768) {
+  if (width < 768) {
+    return 2;
+  } else if (width >= 768 && width < 1024) {
+    return 3;
+  } else if (width >= 1024 && width < 1400) {
+    return 4;
+  } else {
+    return 5;
+  }
 }
 
 /**

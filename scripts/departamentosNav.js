@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", initDepartamentos);
  */
 async function initDepartamentos() {
   try {
-    const data = await fetchDepartamentosData("./../data/categories.json");
+    const data = await fetchDepartamentosData("/public/data/categories.json");
 
     const navbar = document.getElementById("navbar-departamentos");
     const dropdownContainer = document.getElementById("dropdowns-departamentos");

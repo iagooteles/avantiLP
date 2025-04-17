@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   dropdownTrigger.addEventListener("mouseleave", hideMenu);
   megaMenu.addEventListener("mouseleave", hideMenu);
 
-  fetch("./../data/categories.json")
+  fetch("/public/data/categories.json")
     .then((response) => response.json())
     .then((data) => {
       const categorias = data.categorias;
