@@ -74,7 +74,7 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 ```bash
 AvantiLandingPage/
-├── Assets/                         # Arquivos estáticos (imagens e ícones)
+├── assets/                         # Arquivos estáticos (imagens e ícones)
 │   ├── favicon/                    # Favicon do site
 │   ├── icons/                      # Ícones do site
 │   └── images/                     # Imagens usadas na página, organizadas por componentes

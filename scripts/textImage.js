@@ -46,7 +46,7 @@ function getCardOneHTML() {
     return `
       <section class="image-and-text-container no-padding">
         <figure>
-          <img src="./Assets/images/avanti/avanti-mug-2.png" alt="Caneca Avanti" title="Caneca Avanti" class="image-and-text-img first-mug-avanti-image">
+          <img src="./assets/images/avanti/avanti-mug-2.png" alt="Caneca Avanti" title="Caneca Avanti" class="image-and-text-img first-mug-avanti-image">
         </figure>
         <div class="inner-text-container with-padding">
           <h3 class="text-start">LOREM IPSUM</h3>
@@ -79,7 +79,7 @@ function getCardOneHTML() {
 function getCardTwoHTML() {
     const getMapPinTextBlock = () => `
       <div class="map-pin-text-container d-flex">
-        <img src="./Assets/images/utils/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
+        <img src="./assets/images/utils/map-pin-icon.png" alt="Map pin" title="Map pin" style="width: 60px; height: 60px;">
         <p class="mobile-text">
           Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
         </p>
@@ -93,7 +93,7 @@ function getCardTwoHTML() {
       <section class="image-text-outer-container bg-gray">
         <div class="image-and-text-container reverse">
           <figure>
-            <img src="./Assets/images/avanti/avanti-mug.png" alt="Caneca Avanti" title="Caneca Avanti">
+            <img src="./assets/images/avanti/avanti-mug.png" alt="Caneca Avanti" title="Caneca Avanti">
           </figure>
           <div class="inner-text-container inner-text-container-second-card">
             <h3 class="text-center">LOREM IPSUM</h3>

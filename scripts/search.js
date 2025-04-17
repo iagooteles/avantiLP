@@ -113,7 +113,7 @@ function showEmptyInputMessage(input) {
     input.placeholder = originalPlaceholder;
     input.classList.remove("input-error");
     input.classList.remove("shake");
-  }, 4500);
+  }, 2500);
 }
 
 /**
