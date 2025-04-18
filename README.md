@@ -35,7 +35,7 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 ---
 
 ## Observações:
-- Esse projeto foi feito respeitando o modelo mobile-first e possui estilizações para mobile, tablet e desktop;
+- Esse projeto foi feito respeitando o modelo mobile-first e possui estilizações com 3 breakpoints principais mobile(a partir de 390px), tablet(768px) e desktop(1400px);
 
 - No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em /data/cardInfoCarousel.json. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html; Além disso, quando for necessário alterar alguma informação de algum card isso pode ser facilmente feito no arquivo json;
 

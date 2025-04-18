@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
     .catch(error => {
-    console.error('Erro ao carregar o conteúdo:', error);
+        console.error('Erro ao carregar o conteúdo:', error);
     });
 });

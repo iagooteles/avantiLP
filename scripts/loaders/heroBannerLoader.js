@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', loadHeroBannerContent);
+document.addEventListener('heroBannerCarousel', loadHeroBannerContent);
 
 /**
  * Carrega dinamicamente o conteúdo do hero banner a partir de um arquivo JSON externo

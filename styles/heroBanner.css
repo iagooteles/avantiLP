@@ -28,8 +28,7 @@
 }
 
 .hero-banner-content {
-    width: 100%;
-    margin-left: 150px;
+    margin-right: 50px;
 }
 
 .hero-banner h2 {
@@ -64,10 +63,54 @@
     letter-spacing: 0 !important;
 }
   
-@media (min-width: 768px) {
-}  
+@media (min-width: 768px) {    
+    .hero-banner {
+        height: 456px;
+        position: relative;
+        background-size: 50%; 
+        background-position: 20% 100%;
+    }
 
-@media (min-width: 1440px) {
+    .hero-banner-content {
+        position: absolute;        
+        right: max(10px, calc(100vw - 868px) / 2);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px;
+    }
+
+    .hero-banner h2 {
+        font-size: 70px;
+    }
+
+    .hero-banner p {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 1024px) {    
+    .hero-banner {
+        background-size: 50%; 
+        background-position: 20% 70%;
+    }
+
+    .hero-banner-content {
+        width: 400px;
+        right: max(10px, calc(100vw - 1200px) / 2);
+    }
+
+    .super-sale-hero-banner {
+        display: inline;
+    }
+
+    .hero-banner p {
+        font-size: 22px;
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 1400px) {
     .hero-banner {
         height: 510px;
         background-position: 20% -350px;
@@ -76,24 +119,22 @@
   
     .hero-banner div {
         position: absolute;
-        left: 444px;
         transform: translateY(-50%);
         width: 576px;
     }
 
-    .super-sale-hero-banner {
-        display: inline;
+    .hero-banner-content {
+        right: max(10px, calc(100vw - 1400px) / 2);
     }
   
     .hero-banner h2 {
-        font-size: 60px;
+        font-size: 100px;
     }
   
     .hero-banner p {
         width: 600px;
         font-size: 25px;
         letter-spacing: 0.3em;
-        margin-top: 12px;
         text-align: left;
     }
   
@@ -102,5 +143,11 @@
         margin-top: 28px !important;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (min-width: 1900px) {
+    .hero-banner-content {
+        right: max(10px, calc(100vw - 1200px) / 2);
     }
 }

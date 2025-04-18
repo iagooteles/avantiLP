@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('/public/html/footer.html')
+    fetch('/public/html/heroBannerCarouselMobile.html')
     .then(response => response.text())
     .then(data => {      
-        const placeholder = document.querySelector('.footer-placeholder');
+        const placeholder = document.querySelector('.hero-banner-carousel-mobile-placeholder');
         if (placeholder) {
             placeholder.innerHTML = data;
-            document.dispatchEvent(new Event("footerLoaded"));
+            document.dispatchEvent(new Event("heroBannerCarousel"));
         }
     })
     .catch(error => {
