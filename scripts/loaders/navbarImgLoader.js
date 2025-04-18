@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("/public/html/navbarImg.html")
+document.addEventListener("menuNavAllCategoriesLoaded", async () => {
+  await fetch("/public/html/navbarImg.html")
     .then((response) => response.text())
     .then((data) => {
       const placeholders = document.querySelectorAll(".dropdown-img-placeholder");

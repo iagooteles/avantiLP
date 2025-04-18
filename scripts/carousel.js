@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("carouselLoaded", async function () {
   const carousels = document.querySelectorAll(".card-carousel");
 
   try {
@@ -40,7 +40,7 @@ function renderCarousel(carousel, cards) {
 
   const visibleCards = getVisibleCardsPerSlide();
   
-  const totalSlides = Math.min(Math.ceil(cards.length / visibleCards), Math.ceil(cards.length / visibleCards));
+  const totalSlides = 3;
 
   for (let i = 0; i < totalSlides; i++) {
     const slide = createSlide(cards, i, visibleCards);

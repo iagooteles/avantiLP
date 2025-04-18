@@ -1,6 +1,6 @@
 let modalAberto = false;
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("headerLoaded", function () {
     setupSearchButtonListeners();
     setupInputEnterListeners();
 });

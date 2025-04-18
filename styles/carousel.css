@@ -55,7 +55,7 @@
 
 .new-item-card-tag {
     position: absolute;
-    top: -2px;
+    top: -6px;
     left: -1px;
     padding: 3px 6px;
     font-size: 10px;
@@ -77,6 +77,7 @@
     line-height: 100%;
     letter-spacing: 0px;
     min-height: 30px;
+    text-transform: capitalize;
 }
 
 .card-prices-container {
@@ -118,6 +119,7 @@
 .card-prices .discount-price {
     font-size: 16px;
     color: #000;
+    font-weight: 700;
 }
 
 .card-bottom-text {
@@ -229,6 +231,10 @@
         text-decoration: underline;
         margin-top: 0;
     }
+
+    .card-body h3 {
+        font-size: 16px;
+    }
 }
 
 
@@ -252,5 +258,14 @@
         width: 238px;
         height: 409px;
         margin-right: 14.5px;
+    }
+    
+    .card-body h3 {
+        font-size: 14px;
+    }
+
+    
+    .view-more-container button {
+        margin-right: 0;
     }
 }

@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    await fetch('/public/html/footer.html')
+    await fetch('/public/html/header.html')
     .then(response => response.text())
     .then(data => {      
-        const placeholder = document.querySelector('.footer-placeholder');
+        const placeholder = document.querySelector('.header-placeholder');
         if (placeholder) {
             placeholder.innerHTML = data;
-            document.dispatchEvent(new Event("footerLoaded"));
+            document.dispatchEvent(new Event("headerLoaded"));
         }
     })
     .catch(error => {

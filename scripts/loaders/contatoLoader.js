@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch('/public/html/contato.html')
+document.addEventListener("DOMContentLoaded", async () => {
+    await fetch('/public/html/contato.html')
     .then(response => response.text())
     .then(data => {      
         const placeholder = document.querySelector('.contato-placeholder');

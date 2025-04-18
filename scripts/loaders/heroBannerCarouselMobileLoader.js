@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch('/public/html/heroBannerCarouselMobile.html')
+document.addEventListener("DOMContentLoaded", async () => {
+    await fetch('/public/html/heroBannerCarouselMobile.html')
     .then(response => response.text())
     .then(data => {      
         const placeholder = document.querySelector('.hero-banner-carousel-mobile-placeholder');

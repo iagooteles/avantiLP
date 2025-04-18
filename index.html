@@ -39,315 +39,18 @@
   </head>
 
   <body>
+    <!-- Sticky Top -->
     <container class="sticky-top shadow-sm">
-      <!-- Sticky Top -->
       <!-- Coupon -->
-      <div class="coupon">
-        <p>
-          Ganhe <span class="coupon-discount-value">R$10,00</span> de desconto
-          no seu primeiro pedido. Utilize o cupom
-          <span class="discount-coupon">DESCONTO10</span>
-        </p>
-        <p></p>
-      </div>
+      <div class="coupon-placeholder"></div>
       <!-- End Coupon -->
 
       <!-- Header -->
-      <header class="navbar navbar-expand-lg container-fluid">
-        <div
-          class="header-container container-fluid d-flex justify-content-between align-items-center"
-        >
-          <!-- Botão do menu hambúrguer (Mobile) -->
-          <button
-            class="navbar-toggler text-dark d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Logo -->
-          <a class="navbar-brand mx-auto mx-lg-0" href="#">
-            <img
-              src="/public/assets/images/header/logo.png"
-              alt="Avanti logo"
-              title="Avanti logo"
-              height="27"
-              width="152"
-            />
-          </a>
-
-          <!-- Campo de busca (desktop) -->
-          <div class="header-search-box-desktop d-none d-lg-block flex-grow-1">
-            <div class="input-group input-container">
-              <input
-                type="text"
-                class="search-input"
-                placeholder="Digite aqui o que você procura"
-                autocomplete="off"
-                maxlength="30"
-              />
-              <button class="search-btn" type="button">
-                <img
-                  src="/public/assets/icons/search-icon.svg"
-                  alt="Buscar icon"
-                  title="Buscar icon"
-                  height="20"
-                />
-              </button>
-            </div>
-          </div>
-
-          <!-- Carrinho (Mobile) -->
-          <a href="#" class="position-relative d-lg-none cart-mobile">
-            <img
-              src="/public/assets/icons/cart-icon.svg"
-              alt="Carrinho"
-              title="Carrinho"
-              height="30"
-            />
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
-              >2</span
-            >
-          </a>
-
-          <!-- Menu Mobile -->
-          <div class="collapse navbar-collapse hide-desktop" id="navbarNav">
-            <ul class="navbar-nav mx-auto mt-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><span style="color: #005cff">&#10095;</span> Login</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><span style="color: #005cff">&#10095;</span> Produtos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><span style="color: #005cff">&#10095;</span> Contato</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Área do perfil e carrinho (Desktop) -->
-          <div class="d-none d-lg-flex align-items-center">
-            <img
-              src="/public/assets/icons/profile-icon.svg"
-              alt="Perfil"
-              title="Perfil"
-              height="24"
-              class="me-3"
-            />
-            <div class="lh-1">
-              <p class="mb-0">Olá,</p>
-              <p class="mb-0">Nome do Cliente!</p>
-            </div>
-            <a href="#" class="position-relative mx-4">
-              <img
-                src="/public/assets/icons/cart-icon.svg"
-                alt="Carrinho"
-                title="Carrinho"
-                height="28"
-              />
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
-                >2</span
-              >
-            </a>
-          </div>
-        </div>
-
-        <!-- Campo de busca (Mobile) -->
-        <div class="container mt-2 pb-2 d-lg-none">
-          <div class="input-group input-container">
-            <input
-              type="text"
-              class="search-input-mobile"
-              placeholder="Digite aqui o que você procura"
-              autocomplete="off"
-              maxlength="30"
-            />
-            <button class="search-btn" type="button">
-              <img
-                src="/public/assets/icons/search-icon.svg"
-                alt="Buscar icon"
-                title="Buscar icon"
-                height="20"
-              />
-            </button>
-          </div>
-        </div>
-      </header>
+      <header class="navbar navbar-expand-lg container-fluid header-placeholder"></header>
       <!-- End Header -->
 
       <!-- Nav  -->
-      <nav class="navbar navbar-expand-lg d-none d-xxl-block">
-        <div class="container-navbar">
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-            <ul class="navbar-nav" id="departamentos">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle all-categories"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                  <span class="all-categories-title">Todas as categorias</span>
-                </a>
-
-                <!-- Dropdown menu  -->
-                <div
-                  class="dropdown-menu mega-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                  data-submenu-active="1"
-                >
-                  <div class="mega-menu-content">
-                    <!-- O ./scripts/menuNavAllCategories.js vai injetar categorias, submenus e imagem Aqui -->
-                  </div>
-                </div>
-                <!-- End Dropdown menu  -->
-              </li>
-
-              
-              <ul class="navbar-nav" id="navbar-departamentos"></ul>
-              <div id="dropdowns-departamentos"></div>
-
-
-
-
-              <!-- <li class="departamento-custom" id="departamento1">
-                <a href="#" class="departamento-navbar dropdown-toggle">
-                  <span class="all-categories-title">Departamento1</span>
-                </a>
-              </li>
-              
-              <div class="dropdown-custom" id="dropdown-departamento1">
-                <div class="d-flex justify-content-between">
-                  <div class="subcategorias-container d-flex ">
-                    <div class="subcategorias-inner-container">
-
-                    <h5 class="subcategorias-title">Departamento1</h5>
-
-                      <div class="list-container d-flex">
-                        <ul>
-                          <li><a href="#">Subcategoria 1</a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria</a></li>
-                        </ul>
-                        
-                        <ul>
-                          <li><a href="#">Subcategoria 1</a></li>
-                          <li><a href="#">Subcategoria 2</a></li>
-                          <li><a href="#">Subcategoria 3</a></li>
-                          <li><a href="#">Subcategoria 4</a></li>
-                          <li><a href="#">Subcategoria 5</a></li>
-                          <li><a href="#">Subcategoria 6</a></li>
-                          <li><a href="#">Subcategoria 7</a></li>
-                        </ul>
-                        
-                        <ul>
-                          <li><a href="#">Subcategoria 1</a></li>
-                          <li><a href="#">Subcategoria 2</a></li>
-                          <li><a href="#">Subcategoria 3</a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                          <li><a href="#">Subcategoria </a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="dropdown-img-placeholder"></div>
-
-                </div>
-              </div>
-
-              <li class="nav-item dropdown departamento">
-                <a
-                  class="nav-link dropdown-toggle all-categories"
-                  href="#"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="all-categories-title">Departamento2</span>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown departamento">
-                <a
-                  class="nav-link dropdown-toggle all-categories"
-                  href="#"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="all-categories-title">Departamento3</span>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown departamento">
-                <a
-                  class="nav-link dropdown-toggle all-categories"
-                  href="#"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="all-categories-title">Departamento3</span>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown departamento">
-                <a
-                  class="nav-link dropdown-toggle all-categories"
-                  href="#"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="all-categories-title">Departamento3</span>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown departamento">
-                <a
-                  class="nav-link dropdown-toggle all-categories"
-                  href="#"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="all-categories-title">Departamento3</span>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown departamento">
-                <a
-                  class="nav-link dropdown-toggle all-categories"
-                  href="#"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="all-categories-title">Departamento3</span>
-                </a>
-              </li> -->
-
-
-
-            </ul>
-
-          </div>
-        </div>
-      </nav>
+      <nav class="navbar navbar-expand-lg d-none d-xxl-block nav-placeholder"></nav>
       <!-- End Nav  -->
 
     </container>
@@ -358,74 +61,13 @@
     <section class="hero-banner d-none d-md-flex">
       <div class="hero-banner-content"></div>
     </section>
-
     <!-- TODO: Imagem do mobile não parece a mesma que a do desktop  ??   -->
     <!-- Hero Banner Carousel Mobile -->
     <section class="hero-banner-carousel-mobile-placeholder"></section>
     <!-- End Hero Banner -->
 
     <!-- Carousel -->
-    <div class="mt-5 pb-5 container-carousel">
-      <div class="view-more-container d-flex justify-content-between">
-        <span>Lançamentos</span>
-        <button>Ver mais</button>
-      </div>
-
-      <!-- data-bs-ride="false" => para desativar novamente o carousel -->
-      <div
-        id="cardCarousel1"
-        class="carousel slide card-carousel"
-        data-bs-ride="false"
-        data-bs-interval="5000"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#cardCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#cardCarousel"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#cardCarousel"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
-
-        <div class="carousel-inner" id="carousel-inner"></div>
-
-        <!-- Controles -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#cardCarousel"
-          data-bs-slide="prev"
-        >
-          <img
-            src="/public/assets/images/utils/arrow-left.png"
-            alt="Arrow left carousel"
-            title="Arrow left carousel"
-          />
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#cardCarousel"
-          data-bs-slide="next"
-        >
-          <img
-            src="/public/assets/images/utils/arrow-right.png"
-            alt="Arrow right carousel"
-            title="Arrow right carousel"
-          />
-        </button>
-      </div>
-    </div>
+    <div class="carousel-placeholder"></div>
     <!-- End Carousel -->
 
     <!-- Image & Text  -->
@@ -439,67 +81,7 @@
     <!-- EndImage & Text 3  -->
 
     <!-- Carousel 2 -->
-    <div class="mt-5 pb-5 container-carousel d-none d-lg-block">
-      <div class="view-more-container d-flex justify-content-between">
-        <span>Lançamentos</span>
-        <button>Ver mais</button>
-      </div>
-
-      <!-- data-bs-ride="false" => para desativar novamente o carousel -->
-      <div
-        id="cardCarousel2"
-        class="carousel slide card-carousel"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#cardCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#cardCarousel"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#cardCarousel"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
-
-        <div class="carousel-inner" id="carousel-inner"></div>
-
-        <!-- Controles -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#cardCarousel"
-          data-bs-slide="prev"
-        >
-          <img
-            src="/public/assets/images/utils/arrow-left.png"
-            alt="Arrow left carousel"
-            title="Arrow left carousel"
-          />
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#cardCarousel"
-          data-bs-slide="next"
-        >
-          <img
-            src="/public/assets/images/utils/arrow-right.png"
-            alt="Arrow right carousel"
-            title="Arrow right carousel"
-          />
-        </button>
-      </div>
-    </div>
+    <div class="carousel-placeholder d-none d-lg-block"></div>
     <!-- End Carousel 2 -->
 
     <!-- Contato Section  -->
@@ -511,7 +93,7 @@
     <!-- End Newsletter -->
 
     <!-- Footer  -->
-    <div class="footer-placeholder"></div>
+    <footer class="mt-4 footer-placeholder"></footer>
     <!-- End Footer  -->
     
     <!-- Supported By  -->
@@ -525,11 +107,15 @@
     ></script>
     
     <!-- Loaders  -->
+    <script src="./scripts/loaders/carouselLoader.js"></script>
     <script src="./scripts/loaders/contatoLoader.js"></script>
+    <script src="./scripts/loaders/couponLoader.js"></script>
     <script src="./scripts/loaders/footerLoader.js"></script>
+    <script src="./scripts/loaders/headerLoader.js"></script>
     <script src="./scripts/loaders/heroBannerCarouselMobileLoader.js"></script>
     <script src="./scripts/loaders/heroBannerLoader.js"></script>
     <script src="./scripts/loaders/navbarImgLoader.js"></script>
+    <script src="./scripts/loaders/navLoader.js"></script>
     <script src="./scripts/loaders/newsletterLoader.js"></script>
     <script src="./scripts/loaders/supportedByLoader.js"></script>
 

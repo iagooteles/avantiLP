@@ -3,7 +3,7 @@ let hideTimeout = 300;
 let categoriasContainer;
 let navbarImgPath = "../html/navbarImg.html";
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("navLoaded", function () {
   megaMenu = document.querySelector(".mega-menu");
   dropdownTrigger = document.querySelector("#navbarDropdownMenuLink");
   const navDepartamentos = document.querySelector("#departamentos");
@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       createDropdownImgPlaceholder(megaMenuContent);
 
       hoverListener(categoriasContainer, submenuContainer);
+      document.dispatchEvent(new Event("menuNavAllCategoriesLoaded"));
     })
     .catch((error) => {
       console.error("Erro ao carregar categorias:", error);

@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    await fetch('/public/html/footer.html')
+    await fetch('/public/html/coupon.html')
     .then(response => response.text())
     .then(data => {      
-        const placeholder = document.querySelector('.footer-placeholder');
+        const placeholder = document.querySelector('.coupon-placeholder');
         if (placeholder) {
             placeholder.innerHTML = data;
-            document.dispatchEvent(new Event("footerLoaded"));
         }
     })
     .catch(error => {

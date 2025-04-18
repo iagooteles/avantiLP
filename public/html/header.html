@@ -1,0 +1,128 @@
+<div
+  class="header-container container-fluid d-flex justify-content-between align-items-center"
+>
+  <!-- Botão do menu hambúrguer (Mobile) -->
+  <button
+    class="navbar-toggler text-dark d-lg-none"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Logo -->
+  <a class="navbar-brand mx-auto mx-lg-0" href="#">
+    <img
+      src="/public/assets/images/header/logo.png"
+      alt="Avanti logo"
+      title="Avanti logo"
+      height="27"
+      width="152"
+    />
+  </a>
+
+  <!-- Campo de busca (desktop) -->
+  <div class="header-search-box-desktop d-none d-lg-block flex-grow-1">
+    <div class="input-group input-container">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Digite aqui o que você procura"
+        autocomplete="off"
+        maxlength="30"
+      />
+      <button class="search-btn" type="button">
+        <img
+          src="/public/assets/icons/search-icon.svg"
+          alt="Buscar icon"
+          title="Buscar icon"
+          height="20"
+        />
+      </button>
+    </div>
+  </div>
+
+  <!-- Carrinho (Mobile) -->
+  <a href="#" class="position-relative d-lg-none cart-mobile">
+    <img
+      src="/public/assets/icons/cart-icon.svg"
+      alt="Carrinho"
+      title="Carrinho"
+      height="30"
+    />
+    <span
+      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
+      >2</span
+    >
+  </a>
+
+  <!-- Menu Mobile -->
+  <div class="collapse navbar-collapse hide-desktop" id="navbarNav">
+    <ul class="navbar-nav mx-auto mt-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          ><span style="color: #005cff">&#10095;</span> Login</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          ><span style="color: #005cff">&#10095;</span> Produtos</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          ><span style="color: #005cff">&#10095;</span> Contato</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <!-- Área do perfil e carrinho (Desktop) -->
+  <div class="d-none d-lg-flex align-items-center">
+    <img
+      src="/public/assets/icons/profile-icon.svg"
+      alt="Perfil"
+      title="Perfil"
+      height="24"
+      class="me-3"
+    />
+    <div class="lh-1">
+      <p class="mb-0">Olá,</p>
+      <p class="mb-0">Nome do Cliente!</p>
+    </div>
+    <a href="#" class="position-relative mx-4">
+      <img
+        src="/public/assets/icons/cart-icon.svg"
+        alt="Carrinho"
+        title="Carrinho"
+        height="28"
+      />
+      <span
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
+        >2</span
+      >
+    </a>
+  </div>
+</div>
+
+<!-- Campo de busca (Mobile) -->
+<div class="container mt-2 pb-2 d-lg-none">
+  <div class="input-group input-container">
+    <input
+      type="text"
+      class="search-input-mobile"
+      placeholder="Digite aqui o que você procura"
+      autocomplete="off"
+      maxlength="30"
+    />
+    <button class="search-btn" type="button">
+      <img
+        src="/public/assets/icons/search-icon.svg"
+        alt="Buscar icon"
+        title="Buscar icon"
+        height="20"
+      />
+    </button>
+  </div>
+</div>

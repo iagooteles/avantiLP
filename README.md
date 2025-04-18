@@ -47,6 +47,9 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 - ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`; O modal possui animação, e também existe uma mensagem de feedback com animação se o usuário tentar pesquisar por algo com o input vazio;
 
+- Loaders foram criados para a maioria dos componentes, alguns componentes mais complexos(como navbar e carousel), tem outros scripts para auxiliar seus comportamentos e funções;
+   OBS: Alguns Loaders disparam eventos para que outros scripts que dependem do carregamento de algum componente só sejam acionados após o seu carregamento;
+
 - Os arquivos .js possuem Docstrings que explicam suas funções e objetivos;
 
 - Cada componente possui um arquivo .css próprio para facilitar sua manutenção;
@@ -87,7 +90,6 @@ AvantiLandingPage/
 │   │
 │   └── html/                       # Componentes HTML que serão injetados dinamicamente
 │
-├── html/                           # Componentes .html que vão ser injetados no nosso index.html
 ├── scripts/                        # Scripts JavaScript da página
 │   ├── loaders/                    # Scripts para carregar componentes HTML separados em ./html
 │   ├── carousel.js                 # Lógica do carrossel de produtos
@@ -112,9 +114,8 @@ AvantiLandingPage/
    ```sh
    cd nome-do-projeto
    ```
-3. Abra o arquivo `index.html` em seu navegador.
 
-4. Opção de uso: Live Server;
+3. Usar: Live Server;
 
 ---
 
