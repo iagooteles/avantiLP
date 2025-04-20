@@ -31,6 +31,7 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - **CSS3**
 - **JavaScript**
 - **Figma**
+- **Bootstrap**
 
 ---
 
@@ -61,8 +62,8 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
   - Inclui animações de feedback, inclusive para pesquisas vazias.
 
 - 🔄 **Loaders e Eventos**:  
-  - Utilizados para carregar componentes HTML dinamicamente.
-  - Alguns disparam eventos que garantem a execução correta de scripts dependentes.
+  - Loaders foram utilizados para carregar componentes HTML dinamicamente.
+  - Alguns Loaders disparam eventos que garantem a execução correta de scripts dependentes.
 
 - 🧾 **Organização e documentação**:
   - Os arquivos `.js` possuem **docstrings explicativas**.
