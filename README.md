@@ -1,4 +1,4 @@
-# 🚀 Projeto 01 - Desenvolvimento do Layout
+# 🚀 Projeto 01 — Landing Page com HTML, CSS e JS (Desafio Innovation Class)
 
 ## 📝 Objetivo
 O desafio final consiste em desenvolver um layout proposto no Figma utilizando **HTML, CSS e JavaScript**.
@@ -34,24 +34,51 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 
 ---
 
-## Observações:
-- Esse projeto foi feito respeitando o modelo mobile-first e possui estilizações com 3 breakpoints principais mobile(a partir de 390px), tablet(768px) e desktop(1400px). O modelo desktop do figma é em 1920px;
+## 🔍 Observações Técnicas:
+- 📱 **Responsividade**:  
+  O layout foi implementado seguindo a abordagem **mobile-first**, com três breakpoints principais:
+  - Mobile: 390px
+  - Tablet: 768px
+  - Desktop: 1400px (modelo Figma em 1920px)
 
-- No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em /data/cardInfoCarousel.json. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html; Além disso, quando for necessário alterar alguma informação de algum card isso pode ser facilmente feito no arquivo json, o segundo Card foi deixado com uma tag e texto diferente para mostrar o quão simples seria editar alguma informação desses cards;
+- 🎠 **Componente Carousel**:  
+  - A lógica do carousel está em `scripts/carousel.js`.
+  - Os dados vêm do arquivo `data/cardInfoCarousel.json`, facilitando a manutenção e atualização sem mexer no HTML.
+  - Exemplo: o segundo card possui texto/tag distintos para ilustrar a facilidade de edição via JSON.
 
-- No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos, ele busca pela classe 'text-image-' no nosso index.html e faz a lógica para a renderização do componente de acordo com o seu número presente na classe. Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
-   OBS: Visto que os componentes são parecidos, mas levemente diferentes, foi-se reaproveitado parte da sua estrutura para a construção de ambos, a seguir foi implementado uma forma que se uma classe fosse presente na estrutura html seria renderizado o componente com Texto na direita e Imagem na esquerda, caso fosse a outra classe seria o contrário. Assim reaproveitamentos sua estrutura e deixamos o nosso html mais limpo.
+- 🖼️ **Componente Text & Image**:  
+  - Renderizado por `scripts/textImage.js`.
+  - O script identifica a classe `text-image-` no HTML e, baseado no número da classe, monta o conteúdo.
+  - Permite reutilização da estrutura com variações (ex: imagem à esquerda ou direita), deixando o HTML mais limpo.
 
-- Na nav, Departamentos e Categorias foram diferenciadas por numeração, para mostrar que eles estão sendo renderizados por um arquivo externo, e não deixados 'hard coded' diretamente, logo cada Departamento tem a suas Categorias e cada Departamento vai mostrar a suas próprias Categorias;
+- 🧭 **Nav (Departamentos e Categorias)**:  
+  - Os itens são renderizados dinamicamente a partir de `categories.json`, não estão fixos no HTML.
+  - Cada departamento exibe apenas suas categorias, sua numeração foi deixada para deixar este comportamento mais claro.
 
-- ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`; O modal possui animação, e também existe uma mensagem de feedback com animação se o usuário tentar pesquisar por algo com o input vazio;
+- 🔍 **Busca (search.js)**:  
+  - Cria um modal com a mensagem:  
+    `Você buscou por: "termo digitado"`  
+  - Inclui animações de feedback, inclusive para pesquisas vazias.
 
-- Loaders foram criados para a maioria dos componentes, alguns componentes mais complexos(como navbar e carousel), tem outros scripts para auxiliar seus comportamentos e funções;
-   OBS: Alguns Loaders disparam eventos para que outros scripts que dependem do carregamento de algum componente só sejam acionados após o seu carregamento;
+- 🔄 **Loaders e Eventos**:  
+  - Utilizados para carregar componentes HTML dinamicamente.
+  - Alguns disparam eventos que garantem a execução correta de scripts dependentes.
 
-- Os arquivos .js possuem Docstrings que explicam suas funções e objetivos;
+- 🧾 **Organização e documentação**:
+  - Os arquivos `.js` possuem **docstrings explicativas**.
+  - Cada componente tem seu próprio `.css`, facilitando a manutenção e legibilidade.
 
-- Cada componente possui um arquivo .css próprio para facilitar sua manutenção;
+---
+
+### 🧪 Página de Exemplo (example.html)
+
+Este projeto foi desenvolvido com foco em **componentização**, para facilitar a manutenção e reutilização dos elementos.
+
+Para ilustrar essa modularidade, foi criada uma página adicional chamada `example.html`, onde testei diferentes combinações dos componentes com poucas linhas de código.
+
+> ⚠️ **Atenção**:  
+> A página `example.html` é apenas um exemplo de uso livre dos componentes.  
+> Para avaliação do desafio, considere **apenas o arquivo `index.html`**, que segue fielmente o modelo do Figma.
 
 ---
 
@@ -98,11 +125,21 @@ AvantiLandingPage/
 │
 ├── styles/                         # Pasta contendo todos os estilos         
 │
+├── example.html                    # Página para mostrar a modularidade e componentização do projeto
 ├── index.html                      # Página principal da landing page
 └── README.md                       # Documentação do projeto
 ```
 
 ## 📌 Como Executar o Projeto
+
+⚠️ Atenção: Este projeto precisa ser executado com um servidor local (como o Live Server), pois os caminhos dos arquivos (imagens, scripts e estilos) usam uma estrutura baseada na pasta /public.
+Abrir o arquivo .html diretamente no navegador (file:///) pode fazer com que o layout e funcionalidades não funcionem corretamente.
+
+✅ Requisitos
+- Extensão Live Server instalada no VS Code.
+
+▶️ Passo a passo para clonar e executar o projeto
+
 1. Clone este repositório:
    ```sh
    git clone https://github.com/iagooteles/avantiLP.git
@@ -112,6 +149,14 @@ AvantiLandingPage/
    cd avantiLP
    ```
 
-3. Usar Live Server para executar o projeto;
+3. Usar Live Server para executar o projeto(index.html);
+
+▶️ Passo a passo do Live Server
+
+1. Abra o projeto no VS Code.
+
+2. Clique com o botão direito no arquivo index.html (ou o principal do projeto).
+
+3. Selecione "Open with Live Server".
 
 ---
