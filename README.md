@@ -35,15 +35,14 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 ---
 
 ## Observações:
-- Esse projeto foi feito respeitando o modelo mobile-first e possui estilizações com 3 breakpoints principais mobile(a partir de 390px), tablet(768px) e desktop(1400px);
+- Esse projeto foi feito respeitando o modelo mobile-first e possui estilizações com 3 breakpoints principais mobile(a partir de 390px), tablet(768px) e desktop(1400px). O modelo desktop do figma é em 1920px;
 
-- No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em /data/cardInfoCarousel.json. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html; Além disso, quando for necessário alterar alguma informação de algum card isso pode ser facilmente feito no arquivo json;
+- No componente carousel, meu scripts/carousel.js é responsável por renderizar os elementos do carousel, os dados do carousel estão contidos em /data/cardInfoCarousel.json. Essa abordagem melhor é do que ter várias linhas de código no arquivo .html; Além disso, quando for necessário alterar alguma informação de algum card isso pode ser facilmente feito no arquivo json, o segundo Card foi deixado com uma tag e texto diferente para mostrar o quão simples seria editar alguma informação desses cards;
 
 - No componente Text & Image, o script scripts/textImage.js é responsável por renderizar seus elementos, ele busca pela classe 'text-image-' no nosso index.html e faz a lógica para a renderização do componente de acordo com o seu número presente na classe. Decidi fazer o código dessa forma porque existem 3 desses componentes na Landing Page modelo.
-   OBS: Visto que os componentes são parecidos, mas levemente diferentes, foi-se reaproveitado parte da sua estrutura para a construção de ambos, a seguir foi implementado uma forma que se uma classe fosse presente na estrutura html seria renderizado o componente com Texto na direita e Imagem na esquerda, caso fosse a outra classe seria o contrário. Assim reaproveitamentos sua estutura e deixamos o nosso html mais limpo.
+   OBS: Visto que os componentes são parecidos, mas levemente diferentes, foi-se reaproveitado parte da sua estrutura para a construção de ambos, a seguir foi implementado uma forma que se uma classe fosse presente na estrutura html seria renderizado o componente com Texto na direita e Imagem na esquerda, caso fosse a outra classe seria o contrário. Assim reaproveitamentos sua estrutura e deixamos o nosso html mais limpo.
 
-- ./scripts/menuNav.js é responsável pela renderização dos itens da navbar, tirando o componente imagem. Ele busca as informações de ./data/categories.json; Dessa forma é possível facilmente alterar o nosso .json e ver as mudanças em tela;
-   OBS: Como a imagem ao final do nav é fixa, são apenas 8 linhas de código no .html, e vai ficar sempre lá, não houve necessidade de colocar sua lógica de renderização em um arquivo externo; Caso fosse outro componente mais extenso, que tivesse mais linhas de código ou 'poluísse' o .html de alguma forma, seria delegado sua lógica de renderização em um arquivo externo.
+- Na nav, Departamentos e Categorias foram diferenciadas por numeração, para mostrar que eles estão sendo renderizados por um arquivo externo, e não deixados 'hard coded' diretamente, logo cada Departamento tem a suas Categorias e cada Departamento vai mostrar a suas próprias Categorias;
 
 - ./scripts/search.js é responsável pela busca no nosso input do header. Ele cria um modal e exibe a mensagem: `Você buscou por: "${texto_do_input}"`; O modal possui animação, e também existe uma mensagem de feedback com animação se o usuário tentar pesquisar por algo com o input vazio;
 
@@ -71,8 +70,6 @@ O desafio final consiste em desenvolver um layout proposto no Figma utilizando *
 - Footer;
 - Supported by;
 
-.....
-
 ## 📂 Estrutura do projeto
 
 ```bash
@@ -86,7 +83,7 @@ AvantiLandingPage/
 │   ├── data/                       # Arquivos de dados em JSON
 │   │   ├── cardInfoCarousel.json
 │   │   ├── categories.json
-│   │   ├── heroBannerData.json
+│   │   └── heroBannerData.json
 │   │
 │   └── html/                       # Componentes HTML que serão injetados dinamicamente
 │
@@ -112,21 +109,9 @@ AvantiLandingPage/
    ```
 2. Acesse a pasta do projeto:
    ```sh
-   cd nome-do-projeto
+   cd avantiLP
    ```
 
-3. Usar: Live Server;
+3. Usar Live Server para executar o projeto;
 
 ---
-
-TODO: Colocar mais tratamentos de erros com fetch.then.catch ;
-
-TODO: fazer os breakpoints intermediários
-
-TODO: Colocar nav para renderizar de arquivo externo.
-
-TODO: Colocar imagem no dropdown departamentos
-
-TODO: Ver velocidade do carousel;
-
-Continuar aula da 32;

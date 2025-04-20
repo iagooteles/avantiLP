@@ -40,12 +40,12 @@
     font-weight: 700;
     color: #000;
 }
-  
+
 .super-sale-hero-banner {
     font-weight: 300;
     display: block;
 }
-  
+
 .hero-banner p {
     font-weight: 700;
     font-size: 12px;
@@ -55,14 +55,14 @@
     line-height: 40px;
     margin: 0;
 }
-  
+
 .hero-banner-discount-amount {
     font-weight: 700 !important;
     font-size: 32px !important;
     line-height: 40px !important;
     letter-spacing: 0 !important;
 }
-  
+
 @media (min-width: 768px) {    
     .hero-banner {
         height: 456px;
@@ -116,7 +116,7 @@
         background-position: 20% -350px;
         background-size: auto;
     }
-  
+
     .hero-banner div {
         position: absolute;
         transform: translateY(-50%);
@@ -126,18 +126,18 @@
     .hero-banner-content {
         right: max(10px, calc(100vw - 1400px) / 2);
     }
-  
+
     .hero-banner h2 {
         font-size: 100px;
     }
-  
+
     .hero-banner p {
         width: 600px;
         font-size: 25px;
         letter-spacing: 0.3em;
         text-align: left;
     }
-  
+
     .hero-banner-discount-amount {
         font-size: 60px !important;
         margin-top: 28px !important;

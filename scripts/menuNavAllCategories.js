@@ -15,11 +15,6 @@ document.addEventListener("navLoaded", function () {
     });
   }
 
-  // TODO: Deixar o menu sempre visível durante o desenvolvimento, remover depois //
-  // if (megaMenu) {
-  //   megaMenu.classList.add("show");
-  // }
-
   dropdownTrigger.addEventListener("mouseenter", showMenu);
   megaMenu.addEventListener("mouseenter", showMenu);
 

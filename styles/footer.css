@@ -18,9 +18,7 @@ footer .social-icons-footer {
 
 .banking-icons-footer {
     width: 290px;
-    margin: 40px auto 48px;
-    margin-top: 40px;
-    margin-bottom: 48px;
+    margin: 30px auto 28px;
     gap: 21px;
 }
 
@@ -86,6 +84,7 @@ hr {
     
     .banking-icons-footer {
         width: 446px;
+        margin: 40px auto 48px;
     }
 
     .footer-icons-row-1 {
@@ -94,6 +93,11 @@ hr {
     
     .footer-icons-row-2 {
         width: 360px;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+        font-weight: 700;
     }
 }
 
@@ -107,6 +111,7 @@ hr {
         width: 550px;
         flex-wrap: nowrap;
         gap: 0;
+        margin-left: 250px;
     }
 
     .footer-icons-row-1 {
@@ -116,5 +121,9 @@ hr {
     .footer-icons-row-2 {
         width: 40%;
         margin-top: 0;
+    }
+
+    .footer-inner-container > div:first-of-type {
+        align-items: flex-start !important;
     }
 }

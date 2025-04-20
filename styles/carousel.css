@@ -212,12 +212,12 @@
     .card-body button {
         width: 222px;
     }
-    
+
     .view-more-container span {
         font-size: 20px;
         font-weight: 700;
     }
-    
+
     .view-more-container button {
         text-decoration: none;
         background-color: #fff;
@@ -226,7 +226,7 @@
         font-size: 14px;
         font-weight: 700;
     }
-    
+
     .off-discount-amount {
         text-decoration: underline;
         margin-top: 0;
@@ -236,7 +236,6 @@
         font-size: 16px;
     }
 }
-
 
 @media (max-width: 1399px) {
     .carousel-control-prev,
@@ -253,18 +252,17 @@
     .container-carousel {
         width: 1280px;
     }    
-    
+
     .card {
         width: 238px;
         height: 409px;
         margin-right: 14.5px;
     }
-    
+
     .card-body h3 {
         font-size: 14px;
     }
 
-    
     .view-more-container button {
         margin-right: 0;
     }

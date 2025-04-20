@@ -121,7 +121,7 @@
 .mega-menu-categories::-webkit-scrollbar {
     width: 22px;
 }
-  
+
 .mega-menu-categories::-webkit-scrollbar-thumb {
     background-color: #cecece;
     border-radius: 33px;
@@ -151,7 +151,7 @@
     box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-  
+
 .dropdown-custom.show {
     display: block;
 }

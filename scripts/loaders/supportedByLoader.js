@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("/public/html/supportedBy.html")
+document.addEventListener("DOMContentLoaded", async () => {
+    await fetch("/public/html/supportedBy.html")
     .then((response) => response.text())
     .then((data) => {        
         const placeholder = document.querySelector(".supported-by-placeholder");
